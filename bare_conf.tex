@@ -60,11 +60,13 @@
 % \documentclass[conference]{../sty/IEEEtran}
 
 
-
-
-
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
+
+% *** OWN PACKAGES ***
+% Nach LaTex Dokument Hellmich & Espinoza
+\usepackage[utf8]{inputenc} % für Umlaute im Dokument
+\usepackage[ngerman]{babel} % für deutsche Silbentrennung
 
 
 % *** MISC UTILITY PACKAGES ***
@@ -320,28 +322,25 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Bare Demo of IEEEtran.cls\\ for IEEE Conferences}
+\title{Über die Automatisierbarkeit von Traceability im Requirements Engineering\\ - ein systematischer Literatur Review}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
-\and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
-\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678--2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+\author{\IEEEauthorblockN{Patrick Reif}
+\IEEEauthorblockA{Hochschule Bonn-Rhein-Sieg\\Fachbereich Informatik\\Sankt Augustin}}
+%\and
+%\IEEEauthorblockN{Homer Simpson}
+%\IEEEauthorblockA{Twentieth Century Fox\\
+%Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\and
+%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
+%\IEEEauthorblockA{Starfleet Academy\\
+%San Francisco, California 96678--2391\\
+%Telephone: (800) 555--1212\\
+%Fax: (888) 555--1212}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -379,9 +378,7 @@ Fax: (888) 555--1212}}
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
-\begin{abstract}
-The abstract goes here.
-\end{abstract}
+\input{0_Abstract}
 
 % no keywords
 
@@ -400,25 +397,10 @@ The abstract goes here.
 
 
 
-\section{Introduction}
-% no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
-
-\hfill mds
- 
-\hfill August 26, 2015
-
-\subsection{Subsection Heading Here}
-Subsection text here.
-
-
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+\input{1_Einleitung}
+\input{2_Planung}
+\input{3_Ergebnisse}
+\input{4_Zusammenfassung}
 
 
 % An example of a floating figure using the graphicx package.
@@ -518,8 +500,8 @@ Subsubsection text here.
 
 
 
-\section{Conclusion}
-The conclusion goes here.
+%\section{Conclusion}
+%The conclusion goes here.
 
 
 
