@@ -1,0 +1,25 @@
+Seite 1
+Code patterns for automatically validating requirements-to-code traces https://doi.org/10.1145/2351676.2351705
+Towards an intelligent domain-specific traceability solution https://doi.org/10.1145/2642937.2642970
+
+Seite 2
+* Detection of Requirement Errors and Faults via a Human Error Taxonomy: A Feasibility Study https://doi.org/10.1145/2961111.2962596
+Problem-solution mapping for forward and reengineering on architectural level https://doi.org/10.1145/2024445.2024466
+Towards an automation of the traceability of bugs from development logs: a study based on open source software https://doi.org/10.1145/2745802.2745833
+* A systematic literature review of traceability approaches between software architecture and source code https://doi.org/10.1145/2601248.2601278
+
+Seite 3
+Revealing the relationship between architectural elements and source code characteristics https://doi.org/10.1145/2597008.2597156
+
+Seite 5
+* Improving requirements quality using essential use case interaction patterns https://doi.org/10.1145/1985793.1985866
+
+Seite 7
+EA-Miner: a tool for automating aspect-oriented requirements identification https://doi.org/10.1145/1101908.1101967
+Quality software development: what do we need to improve in the software development process? https://doi.org/10.1145/1370099.1370100
+
+Seite 8
+Automatic verification of requirements implementation https://doi.org/10.1145/186258.186324
+
+Seite 9
+An evolutionary model of requirements correctness with early aspects https://doi.org/10.1145/1294948.1294965

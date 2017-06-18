@@ -27,7 +27,7 @@ Wie in \ref{fig:abb1} dargestellt wird zwischen drei Arten von Verfolgbarkeit un
 \begin{itemize}
     \item \textbf{Pre-RS:} Alle Beziehungen zu Artefakten die einer Anforderung vorgelagert sind z.B. Dokumente, Interviews etc. Im allgemeinen der Ursprung einer Anforderung
     \item \textbf{Post-RS:} Alle Beziehungen die einer Anforderung nachgelagert sind z.B Implementierung, Tests. Im allgemeinen die Auswirkung einer Anforderung
-    \item \textbf{Verfolgbarkeit zwischen Anforderungen:} Abhängigkeiten oder Beziehungen zwischen Anforderungen. So kann z.B. eine Anforderung aus einem Konflikt zwischen zwei Anforderungen entstehen oder diese ersetzen. Im allgemeinen spricht man von einer Verfolgbarkeit über die Spezifikation \cite{Pohl2015BasiswissenIREB-Standard}.
+    \item \textbf{Verfolgbarkeit zwischen Anforderungen:} Abhängigkeiten oder Beziehungen zwischen Anforderungen. So kann z.B. eine Anforderung aus einem Konflikt zwischen zwei Anforderungen entstehen oder diese ersetzen. Im allgemeinen spricht man von einer Verfolgbarkeit über die Spezifikation. \cite{Pohl2015BasiswissenIREB-Standard}
 \end{itemize}
 
 Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzierung ein, wie in \ref{fig:abb2} dargestellt.
@@ -41,18 +41,29 @@ Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzie
 
 Die \enquote{Erweiterte Pre- und Post-Traceability} präzisiert die Sicht auf die vor- und nach-gelagerten Artefakte. Die Pre-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und Aspekten in einer der 4 Sichten des Systemkontext. Die Post-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und nachgelagerten Artefakten die im Entwicklungsprozess entstehen. Die Beziehung zwischen Anforderungen umfasst zusätzlich die Verfolgbarkeit zwischen Zielen, Szenarien und lösungsorientierten Anforderungen \cite{Pohl2008RequirementsTechniken}.
 
-Zusammenfassend lässt sich festhalten, das Requirements Traceability die Verfolgbarkeit einer Anforderung vom Ursprung bis zur Implementierung beschreibt. Diese Beziehung muss bidirektional sein, d.h. sie ist in vorwärts- wie in rückwärtsgerichteter Richtung möglich. Eine Verfolgbarkeit besteht dabei zwischen allen vor- und nach-gelagerten Artefakten im Entwicklungsprozess, wobei nach Pohl diese aus dem Kontext, Anforderungsartefakten und nachgelagerten Entwicklungsartefakten besteht. Die Qualität einer Verfolgbarkeit ist bestimmt durch die Vollständigkeit, Konsistenz und Fehlerfreiheit der Verfolgbarkeitsinformationen.
+Zusammenfassend lässt sich festhalten, das Requirements Traceability die Verfolgbarkeit einer Anforderung vom Ursprung bis zur Implementierung beschreibt. Diese Beziehung muss bidirektional sein, d.h. sie ist in vorwärts- wie in rückwärtsgerichteter Richtung möglich. Eine Verfolgbarkeit besteht dabei zwischen allen vor- und nach-gelagerten Artefakten im Entwicklungsprozess, wobei nach Pohl diese aus dem Kontext, Anforderungsartefakten und nachgelagerten Entwicklungsartefakten besteht. Die Qualität einer Verfolgbarkeit definiert sich damit durch die Merkmale der Qualität eines eines Anforderungsdokuments. Die Qualitätskritieren die in ISO/IEC/IEEE 29148:2011 für die Verfolgbarkeit greifen, sind demnach:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{p{2cm} p{5.5cm} l|l}
+\rowcolor[gray] {.6} \hline
+Kriterium & Auswirkung\\\hline
+Eindeutigkeit und Konsistenz & Eine Verfolgbarkeit ist nur dann eindeutig und konsistent wenn ihre Beziehung zu Artefakten in den verschiedenen Phasen des RE eindeutig und konsistent sind. \\ \hline
+Vollständigkeit & Alle relevanten Artefakten müssen in der Verfolgbarkeit erfasst und vollständig dokumentiert sein.  \\ \hline
+Fehlerfreiheit & Abgeleitet aus dem Kriterium \enquote{Verfolgbarkeit}. Eine Verfolgbarkeit kann nur dann gewährleistet werden, wenn die erfasste Information fehlerfrei ist \\  \hline
+\end{tabular}
+\caption{Qualitätskriterien Verfolgbarkeit}
+ \label{tab:tab1_qualitaet_verfolgbarkeit}
+\end{table}
 
 Die Erfassung ist jedoch ein manueller Prozess und dadurch fehleranfällig. Nach Walia \& Carver ist eine der Ursachen für Probleme im Requirements Engineering auf Inkonsistenzen in der Requirements Traceability zurückzuführen, die mitunter durch ein unzureichendes Requirements Management oder durch Fehler von Teammitgliedern verursacht werden \cite{Walia2009AErrors}. 
 
 Um die Qualität sicherzustellen ist es wichtig zu wissen welche Probleme in der Requirements Tracebility existieren und welche Methoden es gibt um diese zu vermeiden.
-Das können präventive sowie kurative Maßnahmen sein.
+Das können präventive wie kurative Maßnahmen sein.
 
 Als zentrales Ziel dieses Systematic Literature Review steht somit die
 
-\enquote{Identifikation von Qualitätsproblemen in der Requirements Traceability, um sie frühzeitig erkennen und vermeiden zu können.
-
-%In diesem Systematic Literature Review soll daher der aktuelle Forschungsstand zu Problemen im Management von Requirements Traceability und Maßnahmen ihrer Vermeidung näher beleuchtet werden.
+\enquote{Identifikation von Qualitätsproblemen in der Requirements Traceability, zur frühzeitigen Erkennung und Vermeidung.}
 
 %\section{Vorgehen}
 %Zu Beginn wurde ein Systematic Literature Review (SLR) durchgeführt, um Probleme im Management von Requirements Traceability zu bestimmen, die die Qualität negativ beeinflussen. 

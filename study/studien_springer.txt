@@ -1,0 +1,60 @@
+Seite 1
+
+Enabling Automated Traceability Maintenance through the Upkeep of Traceability Relations
+Traceability-Why Do It?
+An Improved Approach to the Recovery of Traceability Links between Requirement Documents and Source Codes Based on Latent Semantic Indexing
+Requirements Evolution and What (Research) to Do about It
+Language-Independent Traceability with L�ssig
+Process for Applying Derived Property Based Traceability Framework in Software and Systems Development Life Cycle
+Value-Based Requirements Traceability: Lessons Learned
+Requirements Traceability across Organizational Boundaries - A Survey and Taxonomy
+Interactive Recovery of Requirements Traceability Links Using User Feedback and Configuration Management Logs
+Component Testing Is Not Enough - A Study of Software Faults in Telecom Middleware
+
+Seite 2
+
+ReflexML: UML-Based Architecture-to-Code Traceability and Consistency Checking
+A Visual Traceability Modeling Language
+Ensuring Traceability in Modeling Requirement Using Ontology Based Approach
+Metamodel for Tracing Concerns Across the Life Cycle
+Requirement-Centric Traceability for Change Impact Analysis: A Case Study
+Test Management Traceability Model to Support Software Testing Documentation
+Regulatory Requirements Traceability and Analysis Using Semi-formal Specifications
+Towards Automated Traceability Assessment through Augmented Lifecycle Space
+Traceability Links in Model Transformations between Software and Performance Models
+
+Seite 3
+A Survey on Usage Scenarios for Requirements Traceability in Practice https://doi.org/10.1007/978-3-642-37422-7_12
+Engineering a DSL for Software Traceability https://doi.org/10.1007/978-3-642-00434-6_10
+Automatic Support for Traceability in a Generic Model Management Framework https://doi.org/10.1007/11581741_23
+Do Information Retrieval Algorithms for Automated Traceability Perform Effectively on Issue Tracking System Data? https://doi.org/10.1007/978-3-319-30282-9_4
+1
+The Development and Validation of a Roadmap for Traceability https://doi.org/10.1007/978-3-319-19860-6_5
+Requirements in the 21st Century: Current Practice and Emerging Trends https://doi.org/10.1007/978-3-540-92966-6_3
+
+Seite 4
+Traceability and Evaluation in Scenario Analysis by Use Case Maps https://doi.org/10.1007/11495628_8
+Tackling Semi-automatic Trace Recovery for Large Specifications https://doi.org/10.1007/978-3-642-14192-8_19
+Customizing Traceability Links for the Unified Process https://doi.org/10.1007/978-3-540-77619-2_4
+
+Seite 5
+Toward Visualization and Analysis of Traceability Relationships in Distributed and Offshore Software Development Projects https://doi.org/10.1007/978-3-540-75542-5_15
+Life-Cycle Oriented Requirement Formalization and Traceability https://doi.org/10.1007/978-3-642-35758-9_11
+
+Seite 6
+Challenges in Aligning Requirements Engineering and Verification in a Large-Scale Industrial Context https://doi.org/10.1007/978-3-642-14192-8_14
+Model Matching for Trace Link Generation in Model-Driven Software Development https://doi.org/10.1007/978-3-642-33666-9_39
+Requirements Management with Semantic Technology: An Empirical Study on Automated Requirements Categorization and Conflict Analysis https://doi.org/10.1007/978-3-642-21640-4_3
+Requirements Volatility in Software Maintenance https://doi.org/10.1007/978-3-642-27317-9_15
+
+Seite 7
+Innovations in Natural Language Document Processing for Requirements Engineering https://doi.org/10.1007/978-3-540-89778-1_11
+
+Seite 8
+Improving Requirements Engineering by Artefact Orientation https://doi.org/10.1007/978-3-642-39259-7_11
+
+Seite 9
+Macro-level Traceability Via Media Transformations https://doi.org/10.1007/978-3-540-69062-7_12
+
+Seite 10
+Requirements Modeling and Validation Using Bi-layer Use Case Descriptions https://doi.org/10.1007/978-3-540-87875-9_7

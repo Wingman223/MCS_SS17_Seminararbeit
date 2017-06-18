@@ -1,0 +1,133 @@
+Seite 1
+Towards a cost-effective and reusable traceability system. A semantic approach
+Exploring a Bayesian and linear approach to requirements traceability
+Exploiting traceability uncertainty between software architectural models and extra-functional results
+Enhancing software artefact traceability recovery processes with link count information
+Introducing requirements traceability support in model-driven development of web applications
+Software Patterns for Traceability of Requirements to Finite State Machine Behavior
+Application of human error theories for the process improvement of Requirements Engineering
+Means-ends and whole-part traceability analysis of safety requirements
+Seite 2
+Rule-based generation of requirements traceability relations
+Exploiting traceability uncertainty among artifacts and code
+Towards automated traceability maintenance
+An Approach to Understand and Elicit Requirements using Systemic Models: Ensuring a Connect from Problem Context to Requirements
+Recovering test-to-code traceability using slicing and textual analysis
+A methodology for the classification of quality of requirements using machine learning techniques
+
+Seite 3
+A rationale-based architecture model for design traceability and reasoning
+A method and tool for tracing requirements into specifications
+A scoped approach to traceability management
+A supporting tool for requirements change management in distributed agile development
+Improving change management in software development: Integrating traceability and software configuration management
+Automated traceability analysis for UML model refinements
+
+Seite 4
+A method of requirements change management for global software development
+A systematic literature review to identify and classify software requirement errors
+Model-based requirements verification method: Conclusions from two controlled experiments
+
+Seite 5
+An exploratory study of architectural effects on requirements decisions
+A systematic literature review on agile requirements engineering practices and challenges
+Traceability between models and texts through terminology
+
+Seite 6
+A Requirements Management System based on an Optimization Model of the Design Process
+Implementing requirements engineering processes throughout organizations: success factors and challenges
+Arts�an automated requirements traceability system
+
+Seite 7
+From problem to solution with quality attributes and design aspects
+MeDEA: A database evolution architecture with traceability
+Analyzing Software Evolution and Quality by Extracting Asynchrony Change patterns
+Athena: A collaborative approach to requirements elicitation
+
+Seite 8
+On the generation of requirements specifications from software engineering models: A systematic literature review
+
+Seite 9
+Enumeration and traceability tools for UNIX� and WINDOWS� environments
+Tactics based approach for integrating non-functional requirements in object-oriented analysis and design
+A framework to integrate design knowledge reuse and requirements management in engineering design
+A three-dimensional taxonomy for bidirectional model synchronization
+
+Seite 10
+Defining visions in context: Models, processes and tools for requirements engineering
+Tracing known security vulnerabilities in software repositories � A Semantic Web enabled modeling approach
+Design and code traceability using a PDL metrics tool
+Linking requirements and design data for automated functional evaluation
+
+Seite 11
+Evaluation method for user requirements documents
+
+Seite 12
+An approach for concurrent evaluation of technical and social aspects of software development methodologies
+Toward a new aspect-mining approach for multi-agent systems
+MY-STAR: A methodology and system for tracing and analyzing requirements
+Knowledge-based support for requirements engineering
+
+Seite 13
+...
+
+Seite 14
+An empirical analysis of the impact of software development problem factors on software maintainability
+Measurements in software requirements specification process
+Recovering Relationships between Documentation and Source Code based on the Characteristics of Software Engineering
+
+Seite 16
+Process improvement through process modelling
+Metrics for requirements engineering
+The three dimensions of requirements engineering: A framework and its applications
+
+Seite 17
+A K-trivial set which is not jump traceable at certain orders
+Knowledge based quality-driven architecture design and evaluation
+How are software defects found? The role of implicit defect detection, individual responsibility, documents, and knowledge
+
+Seite 21
+Analyzing maintainability and reliability of object-oriented software using weighted complex network
+Knowledge-based approaches in software documentation: A systematic literature review
+
+Seite 23
+An ontology-based approach for Product Lifecycle Management
+A quality management based on the Quality Model life cycle
+
+Seite 24
+A model-driven approach for developing a model repository: Methodology and tool support
+
+Seite 26
+Software quality engineering
+
+Seite 27
+Automated retrieval of consistent documentation for rapid prototyping systems and software maintenance
+
+Seite 29
+Towards quality control for knowledge-based systems development
+
+Seite 30
+Ontology-based approach for context modeling in enterprise applications
+
+Seite 31
+Quality control in software documentation: Measurement of text comprehensibility
+Bridging the gap between software architecture rationale formalisms and actual architecture documents: An ontology-driven approach
+
+Seite 32
+Domain model-driven software engineering: A method for discovery of dependency links
+
+Seite 34
+Twenty years of object-relational mapping: A survey on patterns, solutions, and their implications on application design
+Toward data mining engineering: A software engineering approach
+
+Seite 35
+The semantic-document approach to combining documents and ontologies
+
+Seite 36
+Change management in evolving web ontologies
+On strategies for testing software product lines: A systematic literature review
+
+Seite 37
+Software process reengineering: Toward a new generation of CASE technology
+
+Only first 1000 documents to be able to view
