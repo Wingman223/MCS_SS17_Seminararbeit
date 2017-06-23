@@ -1,4 +1,5 @@
 \section{Einleitung}
+\label{sec:Einleitung}
 Die Anforderungsverwaltung (Requirements Management) wird nach dem International Requirements Engineering Board (IREB)  als einer der 4 Hauptaktivitäten im Requirements Engineering beschrieben.
 % Pohl2015 S.5
 Als zentrales Element steht hierbei die Sicherstellung der Verfolgbarkeit (auch: Nachvollziehbarkeit) von Anforderungen (Requirements Traceability). \cite{Pohl2015BasiswissenIREB-Standard}
@@ -19,10 +20,10 @@ Was bedeutet aber der Begriff \enquote{Qualität} in der Requirements Traceabili
   \centering
   \includegraphics[width=3.4in]{PohlRupp2015_Fig_8_5.pdf}
   \caption{nach \cite[Fig. 8.5]{Pohl2015BasiswissenIREB-Standard}}
-  \label{fig:abb1}
+  \label{fig:pohlrupp_prepostrs}
 \end{figure}
 
-Wie in \ref{fig:abb1} dargestellt wird zwischen drei Arten von Verfolgbarkeit unterschieden:
+Wie in \ref{fig:pohlrupp_prepostrs} dargestellt wird zwischen drei Arten von Verfolgbarkeit unterschieden:
 
 \begin{itemize}
     \item \textbf{Pre-RS:} Alle Beziehungen zu Artefakten die einer Anforderung vorgelagert sind z.B. Dokumente, Interviews etc. Im allgemeinen der Ursprung einer Anforderung
@@ -30,13 +31,13 @@ Wie in \ref{fig:abb1} dargestellt wird zwischen drei Arten von Verfolgbarkeit un
     \item \textbf{Verfolgbarkeit zwischen Anforderungen:} Abhängigkeiten oder Beziehungen zwischen Anforderungen. So kann z.B. eine Anforderung aus einem Konflikt zwischen zwei Anforderungen entstehen oder diese ersetzen. Im allgemeinen spricht man von einer Verfolgbarkeit über die Spezifikation. \cite{Pohl2015BasiswissenIREB-Standard}
 \end{itemize}
 
-Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzierung ein, wie in \ref{fig:abb2} dargestellt.
+Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzierung ein, wie in \ref{fig:abb_requirementstechniken} dargestellt.
 
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=3.4in]{Pohl2008_Fig_30_3.pdf}
   \caption{nach \cite[Fig. 30.3]{Pohl2008RequirementsTechniken}}
-  \label{fig:abb2}
+  \label{fig:abb_requirementstechniken}
 \end{figure}
 
 Die \enquote{Erweiterte Pre- und Post-Traceability} präzisiert die Sicht auf die vor- und nach-gelagerten Artefakte. Die Pre-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und Aspekten in einer der 4 Sichten des Systemkontext. Die Post-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und nachgelagerten Artefakten die im Entwicklungsprozess entstehen. Die Beziehung zwischen Anforderungen umfasst zusätzlich die Verfolgbarkeit zwischen Zielen, Szenarien und lösungsorientierten Anforderungen \cite{Pohl2008RequirementsTechniken}.
@@ -44,26 +45,57 @@ Die \enquote{Erweiterte Pre- und Post-Traceability} präzisiert die Sicht auf di
 Zusammenfassend lässt sich festhalten, das Requirements Traceability die Verfolgbarkeit einer Anforderung vom Ursprung bis zur Implementierung beschreibt. Diese Beziehung muss bidirektional sein, d.h. sie ist in vorwärts- wie in rückwärtsgerichteter Richtung möglich. Eine Verfolgbarkeit besteht dabei zwischen allen vor- und nach-gelagerten Artefakten im Entwicklungsprozess, wobei nach Pohl diese aus dem Kontext, Anforderungsartefakten und nachgelagerten Entwicklungsartefakten besteht. Die Qualität einer Verfolgbarkeit definiert sich damit durch die Merkmale der Qualität eines eines Anforderungsdokuments. Die Qualitätskritieren die in ISO/IEC/IEEE 29148:2011 für die Verfolgbarkeit greifen, sind demnach:
 
 \begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
 \centering
-\begin{tabular}{p{2cm} p{5.5cm} l|l}
-\rowcolor[gray] {.6} \hline
-Kriterium & Auswirkung\\\hline
-Eindeutigkeit und Konsistenz & Eine Verfolgbarkeit ist nur dann eindeutig und konsistent wenn ihre Beziehung zu Artefakten in den verschiedenen Phasen des RE eindeutig und konsistent sind. \\ \hline
-Vollständigkeit & Alle relevanten Artefakten müssen in der Verfolgbarkeit erfasst und vollständig dokumentiert sein.  \\ \hline
-Fehlerfreiheit & Abgeleitet aus dem Kriterium \enquote{Verfolgbarkeit}. Eine Verfolgbarkeit kann nur dann gewährleistet werden, wenn die erfasste Information fehlerfrei ist \\  \hline
-\end{tabular}
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+\toprule
+Kriterium & Auswirkung\\ \midrule
+Eindeutigkeit und Konsistenz & Eine Verfolgbarkeit ist nur dann eindeutig und konsistent wenn ihre Beziehung zu Artefakten in den verschiedenen Phasen des RE eindeutig und konsistent sind. \\
+Vollständigkeit & Alle relevanten Artefakten müssen in der Verfolgbarkeit erfasst und vollständig dokumentiert sein. \\
+Fehlerfreiheit & Abgeleitet aus dem Kriterium \enquote{Verfolgbarkeit}. Eine Verfolgbarkeit kann nur dann gewährleistet werden, wenn die erfasste Information fehlerfrei ist \\
+\bottomrule
+\end{tabularx}
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
 \caption{Qualitätskriterien Verfolgbarkeit}
- \label{tab:tab1_qualitaet_verfolgbarkeit}
+\label{tab:qualitaet_verfolgbarkeit}
 \end{table}
+
+
+%\begin{table}[ht]
+%\centering
+%\begin{tabular}{p{2cm} p{5.5cm} l|l}
+%\rowcolor[gray] {.6} \hline
+%Kriterium & Auswirkung\\\hline
+%Eindeutigkeit und Konsistenz & Eine Verfolgbarkeit ist nur dann eindeutig und konsistent wenn ihre Beziehung zu Artefakten in den verschiedenen Phasen des RE eindeutig und konsistent sind. \\ \hline
+%Vollständigkeit & Alle relevanten Artefakten müssen in der Verfolgbarkeit erfasst und vollständig dokumentiert sein.  \\ \hline
+%Fehlerfreiheit & Abgeleitet aus dem Kriterium \enquote{Verfolgbarkeit}. Eine Verfolgbarkeit kann nur dann gewährleistet werden, wenn die erfasste Information fehlerfrei ist \\  \hline
+%\end{tabular}
+%\caption{Qualitätskriterien Verfolgbarkeit}
+% \label{tab:tab1_qualitaet_verfolgbarkeit}
+%\end{table}
 
 Die Erfassung ist jedoch ein manueller Prozess und dadurch fehleranfällig. Nach Walia \& Carver ist eine der Ursachen für Probleme im Requirements Engineering auf Inkonsistenzen in der Requirements Traceability zurückzuführen, die mitunter durch ein unzureichendes Requirements Management oder durch Fehler von Teammitgliedern verursacht werden \cite{Walia2009AErrors}. 
 
-Um die Qualität sicherzustellen ist es wichtig zu wissen welche Probleme in der Requirements Tracebility existieren und welche Methoden es gibt um diese zu vermeiden.
-Das können präventive wie kurative Maßnahmen sein.
+Um die Qualität sicherzustellen ist es daher wichtig zu wissen, welche Probleme im Management von Requirements Traceability existieren und welche Methoden es gibt um diese zu vermeiden. Das können präventive wie kurative Maßnahmen sein.
 
-Als zentrales Ziel dieses Systematic Literature Review steht somit die
+\section{Vorgehen}
+Zu Beginn wurde ein Systematic Literature Review (SLR) nach Kitchenham durchgeführt, um Problemen im Management der Requirements Traceability und Methoden ihrer Vermeidung zu bestimmen.
+Ein SLR ist ein formalisierter, wiederholbarer Prozess nach dem ein Forscher die verfügbare Forschungsliteratur anhand definierten Forschungsfragen systematisch durchsucht, um den aktuellen Forschungsstand zu einer Thematik zu bestimmen \cite{Walia2009AErrors}. Die Kriterien für die Auswahl der Literatur und die Vorgehensweise werden dabei offen gelegt und detailliert erläutert, um die Nachvollziehbarkeit, Fairness und Gründlichkeit der Studie begründen zu können. Zudem gibt die Systematik dem Forscher die Sicherheit, die Thematik weitestgehend erfasst zu haben, damit er oder andere Forscher auf den Erkenntnissen weiter aufbauen können \cite{SystematischesArbeiten,Keele2007GuidelinesEngineering}.
 
-\enquote{Identifikation von Qualitätsproblemen in der Requirements Traceability, zur frühzeitigen Erkennung und Vermeidung.}
+Nach \cite{Walia2009AErrors} muss ein SLR einem zentralen Ziel folgen, um effektiv zu sein. Das zentrale Ziel dieser Studie, ist ausgehend von den abschließenden Fragestellungen in \ref{sec:Einleitung}:
 
-%\section{Vorgehen}
-%Zu Beginn wurde ein Systematic Literature Review (SLR) durchgeführt, um Probleme im Management von Requirements Traceability zu bestimmen, die die Qualität negativ beeinflussen. 
+% Ggf. andere formulierung hier? Identifizieren? Vermeiden?
+\enquote{Das Ziel dieser Studie ist es, bestehende Qualitätsprobleme im Management der Requirements Traceability zu identifizieren, um diese zukünftig anhand bekannter Verfahren bestimmen und vermeiden zu können}
+
+
+Das weitere Vorgehen dieser Studie ist wie folgt gegliedert. In \ref{sec:Forschungsmethode} wird kurz der Ablauf des SLRs beschrieben und die einzelnen Schritte detailliert erläutert. In \label{sec:Ergebnisse} werden die Erkenntnisse des Reviewprozesses vorgestellt. ... \textbf{[ weiteres Vorgehen hier einzufügen ]}
+
+\section{Background}
+
+ggf. noch einfügen wenn Zeit, bzw. aus der Einleitung ausgliedern
