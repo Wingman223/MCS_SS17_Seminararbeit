@@ -38,7 +38,7 @@ Aus den Ergebnissen der Analyse konnte eine Vorgehensweise identifiziert werden,
 % Ggf. anhand des Forschungsziels nochmal zu präzisieren!
 Wie in \ref{fig:abb_forschungsfragen} dargestellt wurde das Vorgehen in mehrere Etappen eingeteilt. Im ersten Schritt stand die Identifikation von Forschungsarbeiten die im Themengebiet Requirements Traceability angesiedelt waren und sich mit Problemen oder Lösungsansätzen in diesem Bereich beschäftigten. Entsprechend mussten die Forschungsfragen und Auswahlkriterien so formuliert werden, dass die entsprechenden Arbeiten erfasst wurden. Anhand der Analyse wurde sich dazu entschieden, im weiteren Verlauf Probleme und Verfahren zu separieren und in Bezug zu den Qualitätskriterien zu stellen, da nach den Ergebnissen aus der Analyse nicht jeder Lösungsansatz auf einen Anwendungsfall beschränkt war. Im letzten Schritt folgte dann eine Zusammenführung aller Daten um die Abdeckung von Problemen und Verfahren zu bestimmen um die zentrale Forschungsfrage beantworten zu können.
 
-Die Tabelle \ref{tab:forschungsfragen} zeigt die Forschungsfragen, die aus der Vorgehensweise und der zentralen Fragestellung für diesen Review extrahiert wurden. Um Willkür zu vermeiden, wurde in Tabelle \ref{tab:motivationen} zu jeder Frage eine Motivation niedergeschrieben, die die Sinnhaftigkeit einer Frage separat darstellt. Die erste Frage befasst sich mit möglichen Qualitätsproblemen im Management der Requirements Traceability mit dem Ziel, diese möglichst vollständig zu erfassen. Die zweite Frage befasst sich separat mit den Verfahren zu Behandlung von Qualitätsproblemen und Hinweisen dazu in den erfassten Forschungsarbeiten. Die dritte und letzte Frage fasst die gesammelten Daten zu abstrakteren Vorgehensweisen zusammen, anhand derer ein Abdeckungsgrad für klassifizierte Qualitätsprobleme bestimmt werden kann. 
+Die Tabelle \ref{tab:forschungsfragen} zeigt die Forschungsfragen, die aus der Vorgehensweise und der zentralen Fragestellung für diesen Review extrahiert wurden. Um Willkür zu vermeiden, wurde in Tabelle \ref{tab:motivationen} zu jeder Frage eine Motivation niedergeschrieben, die die Sinnhaftigkeit einer Frage separat darstellt. Die erste Frage befasst sich mit möglichen Qualitätsproblemen im Management der Requirements Traceability mit dem Ziel, diese möglichst vollständig zu erfassen. Die zweite Frage befasst sich separat mit den Verfahren zu Behandlung von Qualitätsproblemen und Hinweisen dazu in den erfassten Forschungsarbeiten. Die dritte und letzte Frage fasst die gesammelten Daten zu abstrakteren Vorgehensweisen zusammen, anhand derer ein Abdeckungsgrad für klassifizierte Qualitätsprobleme bestimmt werden kann. Die Fragen 1 und 2 erforderten einen systematische Literaturreview.
 
 % ------------------------------------------------------------------------------------------
 % --- FORSCHUNGSFRAGEN + MOTIVATIONE
@@ -79,7 +79,7 @@ Forschungsfragen \\ \midrule
 
 % ------------------------------------------------------------------------------------------
 
-\subsection{Auswahl von Quellen und Suchkritieren}
+\subsection{Quellenauswahl und Suche}
 
 Die initiale Auswahl der Quellen erfolgte anhand der unten beschriebenen Auswahlkriterien:
 
@@ -91,10 +91,10 @@ Die initiale Auswahl der Quellen erfolgte anhand der unten beschriebenen Auswahl
             \item Das Volltextdokument musste über die Datenbank oder andere Hilfsmittel abrufbar sein
         \end{itemize}
     \item Die gefundenen Datenbanken wurden auf ein minimales Set reduziert um die Anzahl redundanter Papiere minimal zu halten
-    \item Andere Quellen wurden hinzugeführt, die nach dem Wissen des Forschers relevant sind
+    \item Andere Quellen wurden hinzugefügt, die nach Einschätzung des Forschers eine relevanz zum Thema haben
 \end{itemize}
 
-Eine Einschränkung der Datenbanken auf Zeitschriften und Konferenzen im Bereich Software Engineering oder Software Qualität ergab sich aus der initialen Analyse unter der Berücksichtigung, das dass Management der Requirements Traceability teil des Requirements Engineering im Software Engineering ist. Da der Fokus dieser Arbeit auf Qualität lag, wurde sich letztendlich für die oben genannten Bereiche entschieden um den Suchraum möglichst weit zu fassen. Der erweiterte Suchmechanismus nach logischen Ausdrücken war Vorraussetzung für die geplante Suche nach Suchstrings auf die in .. noch näher eingangen wird. Neben den klassischen Datenbanken war es nach der Auffassung des Forschers notwendig, weitere Quellen wie Buchquellen zu betrachten um die Vollständigkeit des Reviews sicherzustellen. Da Forschungspapiere in mehreren Datenbanken auftauchen konnten und dies einen erheblichen Mehraufwand bedeutet hätte, wurden die gefundenen Datenbanken auf ein minimales Set reduziert um die Anzahl redundanter Papiere zu minimieren. Das Ergebnis der Auswahl ist in \ref{tab:quellen_review} dokumentiert.
+Eine Einschränkung der Datenbanken auf Zeitschriften und Konferenzen im Bereich Software Engineering oder Software Qualität ergab sich aus der initialen Analyse unter der Berücksichtigung, das dass Management der Requirements Traceability teil des Requirements Engineering im Software Engineering ist. Da der Fokus dieser Arbeit auf Qualität lag, wurde sich letztendlich für die oben genannten Bereiche entschieden um den Suchraum möglichst weit zu fassen. Der erweiterte Suchmechanismus nach logischen Ausdrücken war Vorraussetzung für die geplante Suche nach Suchstrings auf die in diesem Kapitel noch näher eingangen wird. Neben den klassischen Datenbanken war es nach der Auffassung des Forschers notwendig, weitere Quellen wie Buchquellen zu betrachten um die Vollständigkeit des Reviews sicherzustellen. Da Forschungspapiere in mehreren Datenbanken auftauchen konnten und dies einen erheblichen Mehraufwand bedeutet hätte, wurden die gefundenen Datenbanken auf ein minimales Set reduziert um die Anzahl redundanter Papiere zu minimieren. Tabelle \ref{tab:quellen_review} zeigt das Ergebnis der Quellenauswahl
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -118,15 +118,22 @@ Erweiterte Quellen & Buchquellen \\
 \label{tab:quellen_review}
 \end{table}
 
-    
-Review zur Vermeidung von BIAS
+Um die Datenbanken zu durchsuchen, wurden aus den zu reviewenden Forschungsfragen 1-2 übergeordnete Suchbegriffe in englischer Sprache abgeleitet. Diese wurden dann mit Synonymen, Abkürzungen und alternativen Schreibweisen aus den in der Analyse gefundenen Büchern, Papieren etc. angereichtert um eine weite Abdeckung des Suchbegriffes sicherzustellen. Da aus der Analyse hervorging, dass Lösungsansätze und Probleme üblicherweise im selben Dokument genannt werden, wurde sich für die Konstruktion eines globalen Suchstrings entschieden, dessen Ergebnisse dann für den Review beider Forschungsfragen verwendet worden ist. Im folgenden der globale Suchstring der für die Suche in den Datenbanken verwendet worden ist
 
-Wie wurden die gefundenen Quellen ausgewählt
-    Vorgehen Titel, Abstract, Inklusion...
-    
-    
+\enquote{((requirements traceability OR traceability) AND (quality OR condition OR character OR property OR attribute OR aspect) AND (problem OR error OR mistake OR reason OR fault OR defect OR inconsistent OR incomplete OR flaw OR lapse OR slip OR err) AND ((abstraction OR root cause OR cause OR origin OR element OR source) OR (improvement OR method OR technique OR approach OR mechanism OR process OR taxonomy) OR (identify OR analyze OR classify) OR (recovery OR reconstruction OR restoration OR recall) OR (correction OR adjustment OR improvement OR amelioration)))}
 
-Liste Inklusions- und Exklusionkriterien
+Die Auswahl der gefundenen Papiere erfolgte in einem mehrstufigen Selektionsprozess. Er umfasste die folgenden Schritte
+
+\begin{enumerate}
+    \item Lesen des Titels um Papiere auszuschließen, die keinen klaren Bezug zum Thema haben
+    \item Lesen des Abstracts um Papiere weiter anhand ihres Bezugs zum Thema einzugrenzen
+    \item Prüfen der Papiere auf die definierten Inklusions- und Exklusionskriterien in \ref{tab:inklusions_exklusionkriterien} um den Bezug zum Thema klar herauszustellen
+    \item Prüfen der Papiere auf die definierten Qualitätskriterien in \ref{tab:qualitaetskriterien_review} um die Qualität der Forschungsarbeit sicherzustellen
+\end{enumerate}
+
+Bei der Durchführung des Reviews musste eine zusätzliche Rahmenbedingung neben dem Selektionsprozess eingeführt werden. Beim Durchsuchen der ersten Datenbank "Science Direct (Elsevier)" wurde das Limit der Anzeige von Suchergebnisse erreicht (1000). Beim Review der bisher gesammelten Treffer konnte zudem festgestellt werden, dass die Trefferquote nach den ersten Seiten dramatisch sank. Daher wurde auf Grund der Limitierung, der durchschnittlichen Anzahl an Treffer pro Datenbank (> 2000) sowie der stark sinkenden Trefferquote das Limit für die Suche in einer Datenbank auf die ersten 10 Ergebnisseiten limitiert.
+
+Für den Review galt es noch die Inklusions- und Exklusionskriterien, sowie Qualitätskriterien für die finale Auswahl von Forschungspapieren zu definieren. Tabelle \ref{tab:inklusions_exklusionkriterien} zeigt die Inklusions- und Exklusionkriterien wie sie für den Review angewendet wurden.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -135,10 +142,10 @@ Liste Inklusions- und Exklusionkriterien
 \begin{tabularx}{\columnwidth}{@{}XX@{}}
 \toprule
 Inklusionskriterien & Exklusionskriterien \\ \midrule
-Studie beschäftigt sich mit Problemen in der Requirements Traceability & Studie hat keinen Bezug zum Forschungsgebiet \\
-Studie beschäftigt sich mit Ursachen für Problemen in der Requirements Traceability & Studie hat keinen Bezug zu den gestellten Forschungsfragen \\
-& Studie ist nicht auf Englisch \\
-& Ergebnisse einer Studie sind unklar oder mehrdeutig \\
+Forschungsarbeit beschäftigt sich mit Problemen in der Requirements Traceability & Forschungsarbeit hat keinen Bezug zum Forschungsgebiet \\
+Forschungsarbeit beschäftigt sich mit Ursachen für Problemen in der Requirements Traceability & Forschungsarbeit hat keinen Bezug zu den gestellten Forschungsfragen \\
+Forschungsarbeit beschäftigt sich mit Methodiken im Management der Requirements Traceability & Forschungsarbeit ist nicht auf Englisch \\
+Empirische Studie (qualitative und quantitative) über Praktiken im Management von Requirements Traceability & Ergebnisse einer Forschungsarbeit sind unklar oder mehrdeutig \\
 \bottomrule
 \end{tabularx}
 \medskip
@@ -151,7 +158,7 @@ Studie beschäftigt sich mit Ursachen für Problemen in der Requirements Traceab
 \label{tab:inklusions_exklusionkriterien}
 \end{table}
 
-Liste Qualitätskriterien
+Die Inklusionskriterien wurden so gewählt, dass sie den Themenbezug zur Requirements Traceability und den Forschungsfragen herausstellten. Die Exklusionskriterien grenzten dies weiter ab. Zusätzlich wurden direkte Ausschlusskriterien eingefügt ohne die eine Forschungsarbeit nicht verwertbar gewesen wäre. Als letzte Instanz für die Auswahl standen die Qualitätskriterien in Tabelle \ref{tab:qualitaetskriterien_review}.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -174,8 +181,12 @@ Kann die Studie nachvollzogen werden? \\
       %\end{tablenotes}
 \end{threeparttable}
 \caption{Qualitätskriterien}
-\label{tab:qualitaetskriterien}
+\label{tab:qualitaetskriterien_review}
 \end{table}
+
+Ihre Aufgabe bestand in der Qualitätssicherung um nur Forschungsarbeiten in die finale Liste aufzunehmen, die den Mindestanforderungen an die Qualität genügten.
+
+
 
 Über die Auswahl der Papiere, Wieviele gefunden, Auswahl nach Titel etc.
 Über die Qualität der Papiere
