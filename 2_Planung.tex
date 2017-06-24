@@ -80,6 +80,7 @@ Forschungsfragen \\ \midrule
 % ------------------------------------------------------------------------------------------
 
 \subsection{Quellenauswahl und Suche}
+\label{subsec:Quellenauswahl}
 
 Die initiale Auswahl der Quellen erfolgte anhand der unten beschriebenen Auswahlkriterien:
 
@@ -122,13 +123,13 @@ Um die Datenbanken zu durchsuchen, wurden aus den zu reviewenden Forschungsfrage
 
 \enquote{((requirements traceability OR traceability) AND (quality OR condition OR character OR property OR attribute OR aspect) AND (problem OR error OR mistake OR reason OR fault OR defect OR inconsistent OR incomplete OR flaw OR lapse OR slip OR err) AND ((abstraction OR root cause OR cause OR origin OR element OR source) OR (improvement OR method OR technique OR approach OR mechanism OR process OR taxonomy) OR (identify OR analyze OR classify) OR (recovery OR reconstruction OR restoration OR recall) OR (correction OR adjustment OR improvement OR amelioration)))}
 
-Die Auswahl der gefundenen Papiere erfolgte in einem mehrstufigen Selektionsprozess. Er umfasste die folgenden Schritte
+Wenn sinnvoll wurden die Filterkriterien dem Fokus des Reviews angepasst und in der Durchführung dokumentiert. Die Auswahl der gefundenen Papiere erfolgte dann in einem mehrstufigen Selektionsprozess. Er umfasste die folgenden Schritte
 
 \begin{enumerate}
     \item Lesen des Titels um Papiere auszuschließen, die keinen klaren Bezug zum Thema haben
     \item Lesen des Abstracts um Papiere weiter anhand ihres Bezugs zum Thema einzugrenzen
     \item Prüfen der Papiere auf die definierten Inklusions- und Exklusionskriterien in \ref{tab:inklusions_exklusionkriterien} um den Bezug zum Thema klar herauszustellen
-    \item Prüfen der Papiere auf die definierten Qualitätskriterien in \ref{tab:qualitaetskriterien_review} um die Qualität der Forschungsarbeit sicherzustellen
+    \item Prüfen der Papiere auf die definierten Qualitätskriterien in Tabelle \ref{tab:qualitaetskriterien_review} um die Qualität der Forschungsarbeit sicherzustellen
 \end{enumerate}
 
 Bei der Durchführung des Reviews musste eine zusätzliche Rahmenbedingung neben dem Selektionsprozess eingeführt werden. Beim Durchsuchen der ersten Datenbank "Science Direct (Elsevier)" wurde das Limit der Anzeige von Suchergebnisse erreicht (1000). Beim Review der bisher gesammelten Treffer konnte zudem festgestellt werden, dass die Trefferquote nach den ersten Seiten dramatisch sank. Daher wurde auf Grund der Limitierung, der durchschnittlichen Anzahl an Treffer pro Datenbank (> 2000) sowie der stark sinkenden Trefferquote das Limit für die Suche in einer Datenbank auf die ersten 10 Ergebnisseiten limitiert.
@@ -167,7 +168,6 @@ Die Inklusionskriterien wurden so gewählt, dass sie den Themenbezug zur Require
 \begin{tabularx}{\columnwidth}{@{}XX@{}}
 \toprule
 Qualitätskriterien \\ \midrule
-Ist die Studie in sich schlüssig? \\
 Basiert die Studie auf sinnvollen Annahmen? \\
 Ist die Vorgehensweise angemessen? \\
 Werden in der Studie Maßnahmen angewendet, um Mehrdeutigkeiten zu vermeiden? \\
@@ -186,12 +186,38 @@ Kann die Studie nachvollzogen werden? \\
 
 Ihre Aufgabe bestand in der Qualitätssicherung um nur Forschungsarbeiten in die finale Liste aufzunehmen, die den Mindestanforderungen an die Qualität genügten.
 
+\subsection{Durchführung}
 
+Von den 4 identifizierten Datenbanken konnten nur 3 durchsucht werden, da die IEEXplore Datenbank zwar den Kriterien für die Auswahl von Datenbanken entsprach, aber ein Limit von 15 Schlüsselwörtern für logische Ausdrücke hatte. Die Anwendung des globalen Suchstrings war daher nicht möglich. 
 
-Über die Auswahl der Papiere, Wieviele gefunden, Auswahl nach Titel etc.
-Über die Qualität der Papiere
+Die Suche in den verbleibenden 3 Datenbanken ergab über 10000 Treffer wobei 60\% davon in der ACM Digital Library gefunden wurden. Den festgelegten Rahmenbedingungen im Selektionsprozess folgend, wurden nur jeweils die ersten 10 Ergebnisseiten anhand der Selektionskriterien bewertet. Insgesamt sind 650 Papiere bewertet worden, davon wurden 92 anhand ihres Titels ausgewählt. Nach Lesen des Abstracts blieben noch 35 Forschungsarbeiten übrig, von denen 14 nach Lesen des Volltextes den festgelegten Inklusions- und Exklusionskriterien genügten. Erfreulicherweise waren alle ausgewählten Forschungsarbeiten von hoher Qualität und entsprachen den Qualitätskriterien.
 
-Liste Verteilung de Papiere?
+In Tabelle \ref{tab:quellenauswahl_quote} sind die Ergebnisse des Reviews nochmal aufgesplittet. Anhand der Ergebnisse kann festgehalten werden, das die initiale Trefferquote mit \~15\% über den Erwartungen lag und obwohl in der Datenbank ScienceDirect 50 Forschungsarbeiten mehr durchsucht wurden, die Quote nur marginal höher war. Das ist ein gutes Indiz für die Korrektheit der Annahme das die Trefferquote in späteren Ergebnisseiten signifikant sinkt. Außerdem war keiner der ausgewählten Forschungsarbeiten redundant was für die Auswahlkriterien von Quellen sprach. Einzig die Trefferquote der Datenbank ACM Digital Library lag, trotz der höheren Trefferanzahl weit unter dem Mittel der anderen beiden Datenbanken SpringerLink und ScienceDirect (Elsevier). Um Fehler bei der Suche auszuschließen wurde nochmal die gleiche Suche mit weiter einschränkenden Filtern durchgeführt. Die Trefferanzahl ließ sich aber nicht signifikant verringern um einen erneuten Review zu rechtfertigen. Es kann daher nur angenommen werden, dass ein oder mehrere Faktoren wie die Menge an verfügbaren Dokumenten, die schiere Anzahl an Ergebnissen oder der Suchalgorithmus für die Auswertung von logischen Ausdrücken hier zu den schlechteren Ergebnissen geführt haben könnten.
+
+% Noch einfügen? Je nach Ergebnisse der Extraktion und Analyse zu erwägen
+%Von den 14 ausgewählten Forschungsarbeiten waren 3 dem Forscher bereits aus der Analyse bekannt \cite{Mder2012TowardsMaintenance, Hu2016DetectionTaxonomy, Merten2016DoData}. Einige relevante Arbeiten wurden dabei nicht erfasst und mussten separat hinz
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}lXXrXXX@{}}
+\toprule
+Datenbank & # Papiere & Nach Titel & Quote & Nach Abstract & Nach Inkl.-Exkl. & Nach Qualität \\ \midrule
+ScienceDirect & 250 & 42 & 16.8 \% & 17 & 7 & 7 \\
+SpringerLink & 200 &  38 & 19 \% & 15 & 6 & 6 \\
+ACM & 200 & 12 & 6 \% & 3 & 1 & 1 \\
+\bottomrule
+\end{tabularx}
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
+\caption{Zusammenfassung Ergebnisse Review}
+\label{tab:quellenauswahl_quote}
+\end{table}
 
 \subsection{Datenextraktion und Datensynthese}
 
@@ -216,33 +242,3 @@ Das Hauptziel dieses Reviews war:
 \begin{center}
 \enquote{Welche Arten von Problemen entstehen im Management der Requirements Traceability und wie können diese klassifiziert werden?}
 \end{center}
-
--------------
-
-
-
-\subsection{Ablauf (Review, Suchprozess)}
-
-Review planen:
-
-Forschungsfragen
-Review Protokoll
-
-Review ausführen:
-
-Suchstrategie, Suchprozess, Methodik
-Dokumentierung der Suche
-
-Review Protokoll
-
-Bestehende SLRs
-Generellese Forschungsfeld
-Zitationen von Gotel \& Finkelstein
-
-\subsection{Kriterien (Inkusion-, Exklusion)}
-
-Was sind die Kriterien für die Inkusion- / Exklusion- von Disserationen
-
-\subsection{Analyse}
-
-Wie wird analysiert, was sind die Methoden?
