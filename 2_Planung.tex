@@ -192,7 +192,7 @@ Von den 4 identifizierten Datenbanken konnten nur 3 durchsucht werden, da die IE
 
 Die Suche in den verbleibenden 3 Datenbanken ergab über 10000 Treffer wobei 60\% davon in der ACM Digital Library gefunden wurden. Den festgelegten Rahmenbedingungen im Selektionsprozess folgend, wurden nur jeweils die ersten 10 Ergebnisseiten anhand der Selektionskriterien bewertet. Insgesamt sind 650 Papiere bewertet worden, davon wurden 92 anhand ihres Titels ausgewählt. Nach Lesen des Abstracts blieben noch 35 Forschungsarbeiten übrig, von denen 14 nach Lesen des Volltextes den festgelegten Inklusions- und Exklusionskriterien genügten. Erfreulicherweise waren alle ausgewählten Forschungsarbeiten von hoher Qualität und entsprachen den Qualitätskriterien.
 
-In Tabelle \ref{tab:quellenauswahl_quote} sind die Ergebnisse des Reviews nochmal aufgesplittet. Anhand der Ergebnisse kann festgehalten werden, das die initiale Trefferquote mit \~15\% über den Erwartungen lag und obwohl in der Datenbank ScienceDirect 50 Forschungsarbeiten mehr durchsucht wurden, die Quote nur marginal höher war. Das ist ein gutes Indiz für die Korrektheit der Annahme das die Trefferquote in späteren Ergebnisseiten signifikant sinkt. Außerdem war keiner der ausgewählten Forschungsarbeiten redundant was für die Auswahlkriterien von Quellen sprach. Einzig die Trefferquote der Datenbank ACM Digital Library lag, trotz der höheren Trefferanzahl weit unter dem Mittel der anderen beiden Datenbanken SpringerLink und ScienceDirect (Elsevier). Um Fehler bei der Suche auszuschließen wurde nochmal die gleiche Suche mit weiter einschränkenden Filtern durchgeführt. Die Trefferanzahl ließ sich aber nicht signifikant verringern um einen erneuten Review zu rechtfertigen. Es kann daher nur angenommen werden, dass ein oder mehrere Faktoren wie die Menge an verfügbaren Dokumenten, die schiere Anzahl an Ergebnissen oder der Suchalgorithmus für die Auswertung von logischen Ausdrücken hier zu den schlechteren Ergebnissen geführt haben könnten.
+In Tabelle \ref{tab:quellenauswahl_quote} sind die Ergebnisse des Reviews nochmal aufgesplittet. Anhand der Ergebnisse kann festgehalten werden, das die initiale Trefferquote mit \~15\% über den Erwartungen lag und obwohl in der Datenbank ScienceDirect 50 Forschungsarbeiten mehr durchsucht wurden, die Quote nur marginal höher war. Das ist ein gutes Indiz für die Korrektheit der Annahme das die Trefferquote in späteren Ergebnisseiten signifikant sinkt. Außerdem war keiner der ausgewählten Forschungsarbeiten redundant was für die Auswahlkriterien der Quellen sprach. Einzig die Trefferquote für die Datenbank ACM Digital Library lag, trotz der höheren Trefferanzahl weit unter dem Mittel der anderen beiden Datenbanken SpringerLink und ScienceDirect (Elsevier). Um Fehler bei der Suche auszuschließen wurde nochmal die gleiche Suche mit weiter einschränkenden Filtern durchgeführt. Die Trefferanzahl ließ sich aber nicht signifikant verringern um einen erneuten Review zu rechtfertigen. Es kann daher nur angenommen werden, dass ein oder mehrere Faktoren wie die Menge an verfügbaren Dokumenten, die schiere Anzahl an Ergebnissen oder der Suchalgorithmus für die Auswertung von logischen Ausdrücken hier zu den schlechteren Ergebnissen geführt haben könnten.
 
 % Noch einfügen? Je nach Ergebnisse der Extraktion und Analyse zu erwägen
 %Von den 14 ausgewählten Forschungsarbeiten waren 3 dem Forscher bereits aus der Analyse bekannt \cite{Mder2012TowardsMaintenance, Hu2016DetectionTaxonomy, Merten2016DoData}. Einige relevante Arbeiten wurden dabei nicht erfasst und mussten separat hinz
@@ -203,7 +203,7 @@ In Tabelle \ref{tab:quellenauswahl_quote} sind die Ergebnisse des Reviews nochma
 \begin{threeparttable}
 \begin{tabularx}{\columnwidth}{@{}lXXrXXX@{}}
 \toprule
-Datenbank & # Papiere & Nach Titel & Quote & Nach Abstract & Nach Inkl.-Exkl. & Nach Qualität \\ \midrule
+Datenbank & Anz. Papiere & Nach Titel & Quote & Nach Abstract & Nach Inkl.-Exkl. & Nach Qualität \\ \midrule
 ScienceDirect & 250 & 42 & 16.8 \% & 17 & 7 & 7 \\
 SpringerLink & 200 &  38 & 19 \% & 15 & 6 & 6 \\
 ACM & 200 & 12 & 6 \% & 3 & 1 & 1 \\
@@ -221,9 +221,71 @@ ACM & 200 & 12 & 6 \% & 3 & 1 & 1 \\
 
 \subsection{Datenextraktion und Datensynthese}
 
+Für die Datenextraktion wurde im Vorfeld des Reviews ein Datenextraktionsformular entwickelt. Der Einsatz solcher Formulare ist üblich in systematischen Literraturreviews um die gesammelten Informationen der Extraktion präzise und konsistent dokumentieren zu können. Das Ziel einer Datenextraktion ist die vollständige Erfassung aller relevanten Informationen, um die gestellten Forschungsfragen beantworten zu können. Ein Datenextraktionsformular wird im Vorfeld entwickelt und enthält alle Datenelemente die relevant sind für die Extraktion.
+
+% Noch zu überarbeiten!
+%Für diesen Review wurden zwei Datenextraktionsformulare entwickelt. Ein Formular enthält die Grunddaten die generell erfasst werden müssen. Das zweite Formular erfasst die Probleme und Lösungsansätze.
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}sX@{}}
+\toprule
+Datenelement & Beschreibung  \\ \midrule
+Identifier & Katalog Identifikationsnummer (DOI) \\
+Bibiliographie & Author, Titel, Jahr, Quelle \\
+Typ & Book section, Conference proceeding, Journal \\
+\bottomrule
+\end{tabularx}
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
+\caption{Daten die aus allen Papieren extrahiert worden sind}
+\label{tab:dataextraction_general}
+\end{table}
+
+%\begin{table*}[t]
+%    \centering
+%    \begin{tabularx}{\textwidth}{sX}
+%        \toprule
+%        Identifier & Katalog ID (DOI) \\
+%        Datenelement & Beschreibung  \\
+%        Bibiliographie & Author, Titel, Jahr, Quelle \\
+%        Typ & Book section, Conference proceeding, Journal \\
+%    \bottomrule
+%    \end{tabularx}
+%    \caption{Daten die aus allen Papieren extrahiert worden sind}
+%    \label{tab:}
+%\end{table*}
+
+\begin{table*}[t]
+    \centering
+    \begin{tabularx}{\textwidth}{lXX}
+        \toprule
+        Fokus & Datenelement & Beschreibung \\ \midrule
+        Probleme im Management der Requirements Traceability            & Problem       & Kurze Beschreibung des allgemeinen Problems \\
+                                                                        & Kontext       & In welchem Kontext entsteht es? \\
+                                                                        & Phase         & Welche Phase der Requirements Traceability betrifft das Problem? \\
+                                                                        & Ursache       & Welche Ursache hat es?  \\
+                                                                        & Auswirkung    & Welche Auswirkungen hat es im Bezug auf die Qualität von Verfolgbarkeit? \\
+        Verfahren zur Behandlung von Qualitätsproblemen                 & Lösungsansatz & Kurze Beschreibung des Lösungsansatzes \\
+                                                                        & Fachgebiet    & Gebiet in dem der Ansatz angesiedelt ist  \\
+                                                                        & Art           & Art des Ansatzes : Manuell, Semi-Automatisch, Automatisch \\
+                                                                        & Unterstützung & Welche Aspekte unterstützt das Verfahren? \\
+                                                                        & Vorgehen      & Beschreibung der Verwendung, Ablauf etc. \\
+                                                                        & Nutzen        & Welcher Nutzen kann aus der Verwendung des Verfahrens gezogen werden? \\
+                                                                        & Limitierungen & Wo liegen die Grenzen des Verfahrens? \\
+    \bottomrule
+    \end{tabularx}
+    \caption{Daten die für das jeweilige Forschungsziel extrahiert worden sind}
+    \label{tab:dataextraction_special}
+\end{table*}
+
 Extrahiere Items, passend zu Fokus
-
-
 
 BIAS vermeidung?
 
