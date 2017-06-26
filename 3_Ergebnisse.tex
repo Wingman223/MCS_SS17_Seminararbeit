@@ -7,7 +7,7 @@ Meistgenanntes Problem : Evolution eines Softwaresystems. Change Management
 
 \subsection{Frage 1.1: Welche Arten von Qualitätsproblemen in der Requirements Traceability wurden in der vorhandenen Literatur identifiziert?}
 
-Das mit Abstand meistgenannteste Problem ist die Evolution von Softwaresystemen und den damit einhergehenden Aufwänden um den Verfall einer etablierten Verfolgbarkeit zu verhindern. Als weiteres Problem wird die Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen genannt. Jedem Problem liegt eine Motivation zugrunde, die eine Erarbeitung adequater  Lösungsansätzen begründet. Die entsprechenden Motivationen wurden in Tabelle \ref{tab:auswertung_probleme_motivation} näher beschrieben.
+Entgegen den Erwartungen ähnelten sich die Problemstellungen in den 14 ausgewählten Literaturen. Daher wurden diese in der Tabelle \ref{tab:auswertung_probleme_allgemein} zu zwei zentralen Problemen im Management der Requirements Traceability zusammengefasst.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -22,96 +22,148 @@ Das mit Abstand meistgenannteste Problem ist die Evolution von Softwaresystemen 
 \end{tabularx} 
 \end{table}
 
-\begin{table}[!ht]
-\renewcommand{\arraystretch}{1.3}
-\caption{Motivationen für Probleme}
-\label{tab:auswertung_probleme_motivation}
-\centering
-\begin{tabularx}{\columnwidth}{@{}ms@{}}
-\toprule
-1. Änderungsmanagement, Wartbarkeit & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mader2009EnablingRelations, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
-2. Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
-\bottomrule
-\end{tabularx} 
-\end{table}
-
-Interessant war, dass die identifizierten Problemen sich mit den Erkenntnissen von Walia \& Carver \cite{Walia2009AErrors} deckten, die in ihrer Arbeit anhand eines SLRs herausgefunden haben, dass die häufigsten Fehler im Requirements Management auf Grund von
+Interessanterweise deckten sich die identifizierten Probleme im Management mit den Erkenntnissen von Walia \& Carver \cite{Walia2009AErrors}, die in ihrer Forschungsarbeit anhand eines SLRs herausgefunden hatten, dass die häufigsten Fehler im Requirements Management auf Grund von
 
 \begin{enumerate}
-    \item Inadequatem Änderungsmanagement, eingeschlossen der Analyse der Auswirkung durch Ändern von Anforderungen ( nach 1. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
-    \item Inadequater/Schlechter Requirements Traceability ( nach 2. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
+    \item Inadequatem Änderungsmanagement, eingeschlossen der Analyse der Auswirkung durch Ändern von Anforderungen
+    \item Inadequater/Schlechter Requirements Traceability
 \end{enumerate}
 
 entstehen. \cite{Walia2009AErrors}
 
-
-%\begin{table}[!ht]
-%\renewcommand{\arraystretch}{1.3}
-%\centering
-%\begin{threeparttable}
-%\begin{tabularx}{\columnwidth}{@{}XXXXX@{}}
-%\toprule
-%Problem & Art & Ursache & Motivation & Quelle  \\ \midrule
-%Evolution von Softwaresystemen & ? & Fortschritte Technologie, Veränderungen in der Nutzererwartung, Kosten durch Rekonstruktion (Komplexität), Keine adequate Toolunterstützung,  & Änderungsmanagement, Wartbarkeit, & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mder2012TowardsMaintenance} \\
-%Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen & ? & Fehlende Notwendigkeit, Projektbedingungen, Fehlende Wahrnehmung der Wichtigkeit, Einsatz inadequater Tools & Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Ghabi2015ExploitingCode, Merten2016DoData}
-%\bottomrule
-%\end{tabularx} 
-%\medskip
-      %\footnotesize\textbf{Legende:}\smallskip
-      %\begin{tablenotes}\footnotesize
-      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
-      %\end{tablenotes}
-%\end{threeparttable}
-%\caption{Zuordnung Kategorisierung der Verfahren und ihrer Nennungen}
-%\label{tab:auswertung_verfahren_kategorisierung}
-%\end{table}
-
-...
-
-\subsection{Frage 1.2: Welche Qualitätsprobleme können durch die Analyse ihrer Ursache identifiziert werden?}
-
-Als Ursache für die Probleme in \ref{tab:auswertung_probleme_allgemein} werden unter anderem genannt
+Entsprechende Ursachen zu den Probleme wurden in der Literatur implizit oder explizit genannt, siehe Tabelle \ref{tab:auswertung_probleme_ursachen}.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Ursachen für Probleme}
-\label{tab:auswertung_probleme_motivation}
+\label{tab:auswertung_probleme_ursachen}
 \centering
 \begin{tabularx}{\columnwidth}{@{}mss@{}}
 \toprule
-Projektgegebenheiten & \cite{Saputri2016EnsuringApproach, Lago2009AManagement} \\
-Kosten nicht im Verhältnis zum Nutzen & \cite{Lago2009AManagement,Spanoudakis2004Rule-basedRelations, Omoronyia2011ExploringTraceability, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach} \\
-Fehlen adequater Tooluntersützung & \cite{Saputri2016EnsuringApproach, Mder2007CustomizingProcess, Spanoudakis2004Rule-basedRelations, Ghabi2015ExploitingCode, Leuser2010TacklingSpecifications} \\
-Evolution des Softwaresystems & \cite{Saputri2016EnsuringApproach, Mader2012TowardsMaintenance, Bavota2014EnhancingInformation, Javed2014ACode} \\
-Komplexität in großen Softwareprojekten & \cite{Tsuchiya2015InteractiveLogs, Bavota2014EnhancingInformation, Javed2014ACode, Spanoudakis2004Rule-basedRelations, Lago2009AManagement}\\
+Fehlen adequater Toolunterstützung & \cite{Saputri2016EnsuringApproach, Mder2007CustomizingProcess, Spanoudakis2004Rule-basedRelations, Ghabi2015ExploitingCode, Leuser2010TacklingSpecifications, Omoronyia2011ExploringTraceability, Tsuchiya2015InteractiveLogs} \\
+Aufwand nicht im Verhältnis zum Nutzen & \cite{Javed2014ACode,Lago2009AManagement,Spanoudakis2004Rule-basedRelations, Omoronyia2011ExploringTraceability, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach, Mder2012TowardsMaintenance, Mader2009EnablingRelations} \\
+Fehleinschätzung der Notwendigkeit & \cite{Leuser2010TacklingSpecifications, Ghabi2015ExploitingCode}
 Einsatz inadequater Tools & \cite{Merten2016DoData} \\
-Inadequates change management & \cite{Walia2009AErrors} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Als zentrale Ursache für eine schlechte Qualität im Management der Requirements Traceability wird in 7 Literaturen das \enquote{Fehlen adequater Tooluntersützung} genannt. Entsprechend kann angenommen werden das auf Grund dieses Umstands eine vollständige Erfassung so wahrgenommen wird als stände ihr \enquote{Aufwand nicht im Verhältnis zum Nutzen}.
+
+Aus den zentralen Problemen und Ursachen lassen sich erste Aussagen über Qualitätsprobleme im Management der Verfolgbarkeit ableiten
+
+\begin{itemize}
+    \item Fehlen adequater Mechanismen um den Verfall von Verfolgbarkeit durch Evolution zu verhindern
+    \item Fehlen adequater Mechanismen um die Qualität von Verfolgbarkeit in bestehenden Spezifikationen wiederherzustellen
+    \item Fehlen adequater Mechanismen die in einem angemessenen Kosten-/Nutzenverhältnis stehen um ihren Einsatz zu rechtfertigen
+\end{itemize}
+
+\subsection{Frage 1.2: Welche Qualitätsprobleme können durch die Analyse ihrer Ursache identifiziert werden?}
+
+Alle Probleme wurden explizit oder implizit im Kontext von großen Softwareprojekten genannt. Die Notwendigkeit von Traceability ergibt sich dort auf Grund der Größe oder Komplexität eines Softwareprojekts und ihre Einfluss auf den Projekterfolg \cite{Lago2009AManagement, Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Tsuchiya2013RecoveringProducts, Ghabi2015ExploitingCode}. Als zusätzlicher Faktor für die Notwendigkeit spricht eine Veränderung der Anforderungen an die Entwicklung von Softwaresystemen, siehe Tabelle \ref{tab:auswertung_probleme_ursachen_needs}.
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Veränderungen in den Projektgegebenheiten}
+\label{tab:auswertung_probleme_ursachen_needs}
+\centering
+\begin{tabularx}{\columnwidth}{@{}ms@{}}
+\toprule
+Fortschritte in den verfügbaren Technologien & \cite{Saputri2016EnsuringApproach} \\
+Höhere Nutzererwartungen & \cite{Saputri2016EnsuringApproach} \\
+Evolutionäre Entwicklung & \cite{Saputri2016EnsuringApproach} \\
+Häufige Veränderungen in den Anforderungen & \cite{Mder2007CustomizingProcess} \\
+Notwendigkeit für sicherheitsrelevante Systeme & \cite{Leuser2010TacklingSpecifications} \\
+Implizite Notwendigkeit für die Wartbarkeit eines Systems & \cite{Lago2009AManagement} \\
 \bottomrule
 \end{tabularx} 
 \end{table}
 
+Entsprechend werden in der Literatur Motivationen erwähnt, die auf Grund der Veränderungen in \ref{tab:auswertung_probleme_ursachen_needs}.
+Diese Veränderungen können zu den Motivationen für die genannten Probleme aus Frage 1.2 geführt haben. 
+
+%\begin{table}[!ht]
+%\renewcommand{\arraystretch}{1.3}
+%\caption{Motivationen für Probleme}
+%\label{tab:auswertung_probleme_motivation}
+%\centering
+%\begin{tabularx}{\columnwidth}{@{}ms@{}}
+%\toprule
+%1. Änderungsmanagement, Wartbarkeit & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mader2009EnablingRelations, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
+%2. Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
+%\bottomrule
+%\end{tabularx} 
+%\end{table}
+
+
 \subsection{Frage 1.3: Beeinflussen die gefundenen Probleme die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
+
+
 ...
 
 \subsection{Frage 2: Welche Verfahren existieren im Management der Requirements Traceability zur Behandlung von Qualitätsproblemen?}
 ...
 
 \subsection{Frage 2.1: Greift die Literatur Prozesse oder Methodiken auf, die zu einer Verbesserung der Qualität beitragen?}
-In der Literatur werden verschiedenste Prozesse und Methodiken genannt, um die Qualität der Requirements Traceability zu verbessern. Sie alle fußten aber auf ein oder mehreren Grundverfahren oder Techniken die sich im Einsatzgebiet bereits bewährt haben. In einem vorrangegangen SLR zu Requirements Traceability Ansätzen \cite{Javed2014ACode} wurden bereits schon verfügbare Ansätze kategorisiert. In der Analyse ließen sich ein Großteil der genannten Verfahren den Kategorisierungen zuordnen. Abweichend zu den von M.A Javed \& U. Zdun bestimmten Kategorisierungen, konnten die in \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations}beschriebenen Ähnlichkeitsbasierten Verfahren nicht direkt zugeordnet werden. Tabelle \ref{tab:auswertung_verfahren_kategorisierung} zeigt alle Kategorisierungen und ihre Nnnungen in den im Review gefundenen Quellen.
 
-\begin{table}[!ht]
+Verschiedenste Prozesse und Methodiken wurden in der Literatur genannt, mit dem das Management von Requirements Traceability und damit die Qualität verbessert werden kann. 
+
+\begin{table}[htbp]
+%\renewcommand{\arraystretch}{1.3}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}XXl@{}}
+\toprule
+Verfahren & Fokus Traceability & Quelle  \\ \midrule
+1. LISA Ansatz & Architektur zu Code & \cite{Javed2014ACode} \\
+2. Unified Process & Architektur zu Design & \cite{Javed2014ACode} \\
+3. Rekonstruktion Architektur anhand Code & Code zu Design & \cite{Javed2014ACode} \\
+4. ArchTrace & Architektur zu Code & \cite{Javed2014ACode} \\
+5. XML-basierter Ansatz für Support traces über UML-basiertes Designmodelle & Design zu Code & \cite{Javed2014ACode} \\
+6. MolhadoArch & Architektur zu Code & \cite{Javed2014ACode} \\
+7. Reverse Engineering anhand Designspezifikation & Architektur zu Code & \cite{Javed2014ACode} \\
+8. Traceability über Archpoints \& Archmappings & Architektur zu Code & \cite{Javed2014ACode} \\
+9. Traceability über Views & Design zu Code & \cite{Javed2014ACode} \\
+10. Traceability über Architekturspezifikation & Architektur zu Code & \cite{Javed2014ACode} \\
+11. Tactic-centric approach & Architektur zu Code & \cite{Javed2014ACode} \\
+12. Einsatz IR zur Rekonstruierung von Traces & Anforderungen und Testspezifikation, Evolution & \cite{Leuser2010TacklingSpecifications, Merten2016DoData} \\
+13. Ontologiebasierter Ansatz mit IR & Szenarien und Systementwicklung & \cite{Saputri2016EnsuringApproach} \\
+14. Rekonstruierung Links mit IR & Anforderungen und Code & \cite{Tsuchiya2013RecoveringProducts} \\
+15. traceMaintainer & Design zu Code & \cite{Mader2009EnablingRelations} \\
+16. Ergebnisse Studie zu Software Process Level (SPL) & Modelle / Sichten & \cite{Lago2009AManagement} \\
+17. Ergebnisse Studie zu Software Process Management & Requirements zu Code & \cite{Lago2009AManagement} \\
+18. Einsatz eventbasierter Traceability über Publish/Subscribe Beziehungen & Requirement zu Artefakten & \cite{Mder2012TowardsMaintenance} \\
+19. Einsatz regelbasierte Techniken & Anforderung zu Modell & \cite{Mder2012TowardsMaintenance, Spanoudakis2004Rule-basedRelations} \\
+20. Traceability anhand unklarheiten über Artefakten & Artefakt zu Code & \cite{Ghabi2015ExploitingCode} \\
+21. Verwenden von Bayesian Believe Networks für Traceability & Use Cases zu Code & \cite{Omoronyia2011ExploringTraceability} \\
+22. Traceability anhand bestimmung von Relevant eines Links & Use Cases zu Code & \cite{Omoronyia2011ExploringTraceability} \\
+23. Bewertung von Ähnlichkeiten zwischen Artefakten mit IR & Artefakte & \cite{Bavota2014EnhancingInformation} \\
+\bottomrule
+\end{tabularx}
+\medskip
+    IR : Information Retrieval
+\end{threeparttable}
+\caption{Verfahren und Fokus}
+\label{tab:auswertung_verfahren_kategorisierung}
+\end{table}
+
+Anhand der 
+
+Sie alle fußten aber auf ein oder mehreren Grundverfahren oder Techniken die sich im Einsatzgebiet bereits bewährt haben. In vorrangegangen SLR zu Requirements Traceability Ansätzen \cite{Javed2014ACode, Mader2012TowardsMaintenance} wurden bereits schon verfügbare Ansätze kategorisiert. In der Analyse ließen sich ein Großteil der genannten Verfahren den Kategorisierungen zuordnen. Abweichend zu den in den SLRs genannten Kategorisierungen, konnten die in \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations} beschriebenen Ähnlichkeitsbasierten Verfahren nicht direkt zugeordnet werden. Tabelle \ref{tab:auswertung_verfahren_kategorisierung} zeigt alle Kategorisierungen und ihre Nennungen in den im Review gefundenen Quellen.
+
+\begin{table}[htbp]
 \renewcommand{\arraystretch}{1.3}
 \centering
 \begin{threeparttable}
 \begin{tabularx}{\columnwidth}{@{}Xl@{}}
 \toprule
 Grundtechnik & Quelle  \\ \midrule
-Linkbasierte Traceability & \cite{Javed2014ACode, Spanoudakis2004Rule-basedRelations,  Omoronyia2011ExploringTraceability} \\
+Linkbasierte Traceability & \cite{Javed2014ACode, Spanoudakis2004Rule-basedRelations, Omoronyia2011ExploringTraceability} \\
 Regelbasierte Traceability & \cite{Javed2014ACode, Ghabi2015ExploitingCode, Lago2009AManagement, Mader2012TowardsMaintenance, Mder2007CustomizingProcess, Spanoudakis2004Rule-basedRelations}  \\
 Ähnlichkeitsbasierte Traceability & \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations} \\
 Evolutionsbasierte Traceability & \cite{Javed2014ACode, Mader2012TowardsMaintenance} \\
 Modellgetriebene Traceability & \cite{Javed2014ACode,Lago2009AManagement, Mader2012TowardsMaintenance, Mder2007CustomizingProcess, Mader2009EnablingRelations, Spanoudakis2004Rule-basedRelations} \\
-Information Retrieval (IR) basierte Traceability & \cite{Javed2014ACode, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach, Leuser2010TacklingSpecifications, Merten2016DoData} \\
+Information Retrieval (IR) basierte Traceability & \cite{Javed2014ACode, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach, Leuser2010TacklingSpecifications, Merten2016DoData}\\
 Machine Learning basierte Traceability & \cite{Javed2014ACode} \\
 \bottomrule
 \end{tabularx}
@@ -125,13 +177,10 @@ Machine Learning basierte Traceability & \cite{Javed2014ACode} \\
 \label{tab:auswertung_verfahren_kategorisierung}
 \end{table}
 
-%? Beschreibung Kategorisierung?
 
-Von den beschriebenen Verfahren wurden die meisten für die Wiederherstellung von RT verwendet
+Limtierungen?
 
-Limitierungen
 
-...
 
 \subsection{Frage 2.2: Addressieren die gefundenen Verfahren die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
 ...
