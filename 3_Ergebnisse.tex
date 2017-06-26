@@ -1,5 +1,149 @@
-\section{Ergebnisse des Reviews}
-\label{sec:Ergebnisse}
+\section{Auswertung des Reviews}
 
-Suchergebnisse, Protokoll
-Synthese
+\subsection{Frage 1: Welche Arten von Qualitätsproblemen können während des Softwarelebenszyklus im Management der Requirements Traceability entstehen?}
+...
+Kontext : große Softwareprojekte
+Meistgenanntes Problem : Evolution eines Softwaresystems. Change Management
+
+\subsection{Frage 1.1: Welche Arten von Qualitätsproblemen in der Requirements Traceability wurden in der vorhandenen Literatur identifiziert?}
+
+Das mit Abstand meistgenannteste Problem ist die Evolution von Softwaresystemen und den damit einhergehenden Aufwänden um den Verfall einer etablierten Verfolgbarkeit zu verhindern. Als weiteres Problem wird die Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen genannt. Jedem Problem unterliegt einer Motivation die einer Erarbeitung von Lösungsansätzen begründet. Die entsprechenden Motivationen wurden in Tabelle \ref{tab:auswertung_probleme_motivation} näher beschrieben.
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Probleme in der Requirements Traceability}
+\label{tab:auswertung_probleme_allgemein}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}XX@{}}
+\toprule
+1. Evolution von Softwaresystemen & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations,Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability,Lago2009AManagement, Mader2009EnablingRelations,Mder2012TowardsMaintenance,Ghabi2015ExploitingCode} \\
+2. Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen & \cite{Mder2007CustomizingProcess,Leuser2010TacklingSpecifications,Merten2016DoData} \\
+\bottomrule
+\end{tabularx} 
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Motivationen für Probleme in Tabelle \ref{tab:auswertung_verfahren_kategorisierung}}
+\label{tab:auswertung_probleme_motivation}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}Xl@{}}
+\toprule
+1. Änderungsmanagement, Wartbarkeit & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mader2009EnablingRelations, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
+2. Veränderungen in der Notwendigkeit,\\ Späte Dokumentation,\\ Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
+\bottomrule
+\end{tabularx} 
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+Interessant ist, das die identifizierten Problemen sich mit den Erkenntnissen von Walia \& Carver \cite{Walia2009AErrors} deckten, die in ihrer Arbeit anhand eines SLRs herausgefunden haben, dass die häufigsten Fehler im Requirements Management auf Grund von
+
+\begin{enumerate}
+    \item Inadequatem Änderungsmanagement, eingeschlossen der Analyse der Auswirkung durch Ändern von Anforderungen ( nach 1. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
+    \item Inadequater/Schlechter Requirements Traceability ( nach 2. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
+\end{enumerate}
+
+entstehen \cite[nach S. 1097, Tabelle 22]{Walia2009AErrors}.
+
+
+%\begin{table}[!ht]
+%\renewcommand{\arraystretch}{1.3}
+%\centering
+%\begin{threeparttable}
+%\begin{tabularx}{\columnwidth}{@{}XXXXX@{}}
+%\toprule
+%Problem & Art & Ursache & Motivation & Quelle  \\ \midrule
+%Evolution von Softwaresystemen & ? & Fortschritte Technologie, Veränderungen in der Nutzererwartung, Kosten durch Rekonstruktion (Komplexität), Keine adequate Toolunterstützung,  & Änderungsmanagement, Wartbarkeit, & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mder2012TowardsMaintenance} \\
+%Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen & ? & Fehlende Notwendigkeit, Projektbedingungen, Fehlende Wahrnehmung der Wichtigkeit, Einsatz inadequater Tools & Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Ghabi2015ExploitingCode, Merten2016DoData}
+%\bottomrule
+%\end{tabularx} 
+%\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+%\end{threeparttable}
+%\caption{Zuordnung Kategorisierung der Verfahren und ihrer Nennungen}
+%\label{tab:auswertung_verfahren_kategorisierung}
+%\end{table}
+
+...
+
+\subsection{Frage 1.2: Welche Qualitätsprobleme können durch die Analyse ihrer Ursache identifiziert werden?}
+
+Als Ursachen für die 
+
+\subsection{Frage 1.3: Beeinflussen die gefundenen Probleme die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
+...
+
+\subsection{Frage 2: Welche Verfahren existieren im Management der Requirements Traceability zur Behandlung von Qualitätsproblemen?}
+...
+
+\subsection{Frage 2.1: Greift die Literatur Prozesse oder Methodiken auf, die zu einer Verbesserung der Qualität beitragen?}
+In der Literatur werden verschiedenste Prozesse und Methodiken genannt, um die Qualität der Requirements Traceability zu verbessern. Sie alle fußten aber auf ein oder mehreren Grundverfahren oder Techniken die sich im Einsatzgebiet bereits bewährt haben. In einem vorrangegangen SLR zu Requirements Traceability Ansätzen \cite{Javed2014ACode} wurden bereits schon verfügbare Ansätze kategorisiert. In der Analyse ließen sich ein Großteil der genannten Verfahren den Kategorisierungen zuordnen. Abweichend zu den von M.A Javed \& U. Zdun bestimmten Kategorisierungen, konnten die in \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations}beschriebenen Ähnlichkeitsbasierten Verfahren nicht direkt zugeordnet werden. Tabelle \ref{tab:auswertung_verfahren_kategorisierung} zeigt alle Kategorisierungen und ihre Nnnungen in den im Review gefundenen Quellen.
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\begin{threeparttable}
+\begin{tabularx}{\columnwidth}{@{}Xl@{}}
+\toprule
+Grundtechnik & Quelle  \\ \midrule
+Linkbasierte Traceability & \cite{Javed2014ACode, Spanoudakis2004Rule-basedRelations,  Omoronyia2011ExploringTraceability} \\
+Regelbasierte Traceability & \cite{Javed2014ACode, Ghabi2015ExploitingCode, Lago2009AManagement, Mader2012TowardsMaintenance, Mder2007CustomizingProcess, Spanoudakis2004Rule-basedRelations}  \\
+Ähnlichkeitsbasierte Traceability & \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations} \\
+Evolutionsbasierte Traceability & \cite{Javed2014ACode, Mader2012TowardsMaintenance} \\
+Modellgetriebene Traceability & \cite{Javed2014ACode,Lago2009AManagement, Mader2012TowardsMaintenance, Mder2007CustomizingProcess, Mader2009EnablingRelations, Spanoudakis2004Rule-basedRelations} \\
+Information Retrieval (IR) basierte Traceability & \cite{Javed2014ACode, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach, Leuser2010TacklingSpecifications, Merten2016DoData} \\
+Machine Learning basierte Traceability & \cite{Javed2014ACode} \\
+\bottomrule
+\end{tabularx}
+\medskip
+      %\footnotesize\textbf{Legende:}\smallskip
+      %\begin{tablenotes}\footnotesize
+      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
+      %\end{tablenotes}
+\end{threeparttable}
+\caption{Zuordnung Kategorisierung der Verfahren und ihrer Nennungen}
+\label{tab:auswertung_verfahren_kategorisierung}
+\end{table}
+
+%? Beschreibung Kategorisierung?
+
+Von den beschriebenen Verfahren wurden die meisten für die Wiederherstellung von RT verwendet
+
+Limitierungen
+
+...
+
+\subsection{Frage 2.2: Addressieren die gefundenen Verfahren die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
+...
+
+\subsection{Frage 3: Lassen sich die Erkenntnisse aus 1-2 zu Aussagen über mögliche Verfahrensweisen im spezifischen Anwendungsfall zusammenfassen?}
+..
+
+\section{Diskussion}
+
+Grafik zu
+
+Das Hauptaugenmerk dieses SLR war es, bestehende Probleme in der Requirements Traceability zu identifizieren und zu klassifizieren. Um einen Fokus zu setzen, wurde sich bei den Forschungfragen am untergeordneten Ziel, der Verbesserung der Erkennung und Vermeidung von Qualitätsproblemen in der Requirements Traceability, orientiert. Unter betrachtung 
+
+Das Hauptziel dieses Reviews war:
+
+\begin{center}
+\enquote{Welche Arten von Problemen entstehen im Management der Requirements Traceability und wie können diese klassifiziert werden?}
+\end{center}
