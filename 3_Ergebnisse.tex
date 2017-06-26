@@ -1,63 +1,48 @@
 \section{Auswertung des Reviews}
 
 \subsection{Frage 1: Welche Arten von Qualitätsproblemen können während des Softwarelebenszyklus im Management der Requirements Traceability entstehen?}
-...
+
 Kontext : große Softwareprojekte
 Meistgenanntes Problem : Evolution eines Softwaresystems. Change Management
 
 \subsection{Frage 1.1: Welche Arten von Qualitätsproblemen in der Requirements Traceability wurden in der vorhandenen Literatur identifiziert?}
 
-Das mit Abstand meistgenannteste Problem ist die Evolution von Softwaresystemen und den damit einhergehenden Aufwänden um den Verfall einer etablierten Verfolgbarkeit zu verhindern. Als weiteres Problem wird die Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen genannt. Jedem Problem unterliegt einer Motivation die einer Erarbeitung von Lösungsansätzen begründet. Die entsprechenden Motivationen wurden in Tabelle \ref{tab:auswertung_probleme_motivation} näher beschrieben.
+Das mit Abstand meistgenannteste Problem ist die Evolution von Softwaresystemen und den damit einhergehenden Aufwänden um den Verfall einer etablierten Verfolgbarkeit zu verhindern. Als weiteres Problem wird die Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen genannt. Jedem Problem liegt eine Motivation zugrunde, die eine Erarbeitung adequater  Lösungsansätzen begründet. Die entsprechenden Motivationen wurden in Tabelle \ref{tab:auswertung_probleme_motivation} näher beschrieben.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
 \caption{Probleme in der Requirements Traceability}
 \label{tab:auswertung_probleme_allgemein}
 \centering
-\begin{threeparttable}
-\begin{tabularx}{\columnwidth}{@{}XX@{}}
+\begin{tabularx}{\columnwidth}{@{}sm@{}}
 \toprule
 1. Evolution von Softwaresystemen & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations,Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability,Lago2009AManagement, Mader2009EnablingRelations,Mder2012TowardsMaintenance,Ghabi2015ExploitingCode} \\
 2. Wiederherstellung von Verfolgbarkeit in bestehenden Softwaresystemen & \cite{Mder2007CustomizingProcess,Leuser2010TacklingSpecifications,Merten2016DoData} \\
 \bottomrule
 \end{tabularx} 
-\medskip
-      %\footnotesize\textbf{Legende:}\smallskip
-      %\begin{tablenotes}\footnotesize
-      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
-      %\end{tablenotes}
-\end{threeparttable}
 \end{table}
-
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
-\caption{Motivationen für Probleme in Tabelle \ref{tab:auswertung_verfahren_kategorisierung}}
+\caption{Motivationen für Probleme}
 \label{tab:auswertung_probleme_motivation}
 \centering
-\begin{threeparttable}
-\begin{tabularx}{\columnwidth}{@{}Xl@{}}
+\begin{tabularx}{\columnwidth}{@{}ms@{}}
 \toprule
 1. Änderungsmanagement, Wartbarkeit & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mader2009EnablingRelations, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
-2. Veränderungen in der Notwendigkeit,\\ Späte Dokumentation,\\ Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
+2. Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
 \bottomrule
 \end{tabularx} 
-\medskip
-      %\footnotesize\textbf{Legende:}\smallskip
-      %\begin{tablenotes}\footnotesize
-      %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
-      %\end{tablenotes}
-\end{threeparttable}
 \end{table}
 
-Interessant ist, das die identifizierten Problemen sich mit den Erkenntnissen von Walia \& Carver \cite{Walia2009AErrors} deckten, die in ihrer Arbeit anhand eines SLRs herausgefunden haben, dass die häufigsten Fehler im Requirements Management auf Grund von
+Interessant war, dass die identifizierten Problemen sich mit den Erkenntnissen von Walia \& Carver \cite{Walia2009AErrors} deckten, die in ihrer Arbeit anhand eines SLRs herausgefunden haben, dass die häufigsten Fehler im Requirements Management auf Grund von
 
 \begin{enumerate}
     \item Inadequatem Änderungsmanagement, eingeschlossen der Analyse der Auswirkung durch Ändern von Anforderungen ( nach 1. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
     \item Inadequater/Schlechter Requirements Traceability ( nach 2. in Tabelle \ref{tab:auswertung_verfahren_kategorisierung})
 \end{enumerate}
 
-entstehen \cite[nach S. 1097, Tabelle 22]{Walia2009AErrors}.
+entstehen. \cite{Walia2009AErrors}
 
 
 %\begin{table}[!ht]
@@ -85,7 +70,25 @@ entstehen \cite[nach S. 1097, Tabelle 22]{Walia2009AErrors}.
 
 \subsection{Frage 1.2: Welche Qualitätsprobleme können durch die Analyse ihrer Ursache identifiziert werden?}
 
-Als Ursachen für die 
+Als Ursache für die Probleme in \ref{tab:auswertung_probleme_allgemein} werden unter anderem genannt
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Ursachen für Probleme}
+\label{tab:auswertung_probleme_motivation}
+\centering
+\begin{tabularx}{\columnwidth}{@{}mss@{}}
+\toprule
+Projektgegebenheiten & \cite{Saputri2016EnsuringApproach, Lago2009AManagement} \\
+Kosten nicht im Verhältnis zum Nutzen & \cite{Lago2009AManagement,Spanoudakis2004Rule-basedRelations, Omoronyia2011ExploringTraceability, Bavota2014EnhancingInformation, Saputri2016EnsuringApproach} \\
+Fehlen adequater Tooluntersützung & \cite{Saputri2016EnsuringApproach, Mder2007CustomizingProcess, Spanoudakis2004Rule-basedRelations, Ghabi2015ExploitingCode, Leuser2010TacklingSpecifications} \\
+Evolution des Softwaresystems & \cite{Saputri2016EnsuringApproach, Mader2012TowardsMaintenance, Bavota2014EnhancingInformation, Javed2014ACode} \\
+Komplexität in großen Softwareprojekten & \cite{Tsuchiya2015InteractiveLogs, Bavota2014EnhancingInformation, Javed2014ACode, Spanoudakis2004Rule-basedRelations, Lago2009AManagement}\\
+Einsatz inadequater Tools & \cite{Merten2016DoData} \\
+Inadequates change management & \cite{Walia2009AErrors} \\
+\bottomrule
+\end{tabularx} 
+\end{table}
 
 \subsection{Frage 1.3: Beeinflussen die gefundenen Probleme die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
 ...
