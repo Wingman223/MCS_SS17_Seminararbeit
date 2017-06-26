@@ -1,9 +1,11 @@
 \section{Auswertung des Reviews}
+\label{sec:AuswertungReview}
 
 \subsection{Frage 1: Welche Arten von Qualitätsproblemen können während des Softwarelebenszyklus im Management der Requirements Traceability entstehen?}
 
-Kontext : große Softwareprojekte
-Meistgenanntes Problem : Evolution eines Softwaresystems. Change Management
+Aus den 14 ausgewählten Forschungsliteraturen ging hervor, dass alle aktuelle relevanten Qualitätsprobleme sich auf den Kontext von großen Softwaresystemen bezogen. Die Größe und Komplexität kann dort, ohne adequates Management der Requirements Traceability großen Einfluss auf das Projekt bis hin zum gesamten Projekterfolg haben. Als ein weiterer Faktor kann die sich ändernde Projektumgebung genannt werden, die die Notwendigkeit von Verfolgbarkeit weiter in den Vordergrund gerückt hat.
+
+Die Erkenntnisse zeigen, das die Etablierung von Verfolgbarkeit weniger ein Thema ist als ihr direkter Verfall durch Evolution des Softwaresystems. Ein weiterer Punkt steht in der Wiederherstellung der Qualität der Verfolgbarkeit. Beide Qualitätsprobleme erzeugen hohe Aufwände und Kosten und stehen entgegen dem Nutzen und den Motivationen der eigentlichen Einführung von Verfolgbarkeit. In Bezug zu den identifizierten Motivationen stehen die zentralen Aspekte das Änderungsmanagement durch Evolution, die Qualitätssicherung und Wartbarkeit wie auch die Nachweisbarkeit \& Akzeptanz einzelner Systemfunktionen.
 
 \subsection{Frage 1.1: Welche Arten von Qualitätsproblemen in der Requirements Traceability wurden in der vorhandenen Literatur identifiziert?}
 
@@ -55,12 +57,11 @@ Aus den zentralen Problemen und Ursachen lassen sich erste Aussagen über Qualit
 \begin{itemize}
     \item Fehlen adequater Mechanismen um den Verfall von Verfolgbarkeit durch Evolution zu verhindern
     \item Fehlen adequater Mechanismen um die Qualität von Verfolgbarkeit in bestehenden Spezifikationen wiederherzustellen
-    \item Fehlen adequater Mechanismen die in einem angemessenen Kosten-/Nutzenverhältnis stehen um ihren Einsatz zu rechtfertigen
 \end{itemize}
 
 \subsection{Frage 1.2: Welche Qualitätsprobleme können durch die Analyse ihrer Ursache identifiziert werden?}
 
-Alle Probleme wurden explizit oder implizit im Kontext von großen Softwareprojekten genannt. Die Notwendigkeit von Traceability ergibt sich dort auf Grund der Größe oder Komplexität eines Softwareprojekts und ihre Einfluss auf den Projekterfolg \cite{Lago2009AManagement, Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Tsuchiya2013RecoveringProducts, Ghabi2015ExploitingCode}. Als zusätzlicher Faktor für die Notwendigkeit spricht eine Veränderung der Anforderungen an die Entwicklung von Softwaresystemen, siehe Tabelle \ref{tab:auswertung_probleme_ursachen_needs}.
+Alle Probleme wurden explizit oder implizit im Kontext von großen Softwareprojekten genannt. Die Notwendigkeit von Traceability ergibt sich dort auf Grund der Größe oder Komplexität eines Softwareprojekts und ihres Einflusses auf den Projekterfolg \cite{Lago2009AManagement, Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Tsuchiya2013RecoveringProducts, Ghabi2015ExploitingCode}. Als zusätzlicher Faktor für die Notwendigkeit spricht eine Veränderung der Anforderungen an die Entwicklung von Softwaresystemen, siehe Tabelle \ref{tab:auswertung_probleme_ursachen_needs}.
 
 \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -71,7 +72,7 @@ Alle Probleme wurden explizit oder implizit im Kontext von großen Softwareproje
 \toprule
 Fortschritte in den verfügbaren Technologien & \cite{Saputri2016EnsuringApproach} \\
 Höhere Nutzererwartungen & \cite{Saputri2016EnsuringApproach} \\
-Evolutionäre Entwicklung & \cite{Saputri2016EnsuringApproach} \\
+Evolutionäre Entwicklung von Softwaresystemen & \cite{Saputri2016EnsuringApproach} \\
 Häufige Veränderungen in den Anforderungen & \cite{Mder2007CustomizingProcess} \\
 Notwendigkeit für sicherheitsrelevante Systeme & \cite{Leuser2010TacklingSpecifications} \\
 Implizite Notwendigkeit für die Wartbarkeit eines Systems & \cite{Lago2009AManagement} \\
@@ -79,37 +80,40 @@ Implizite Notwendigkeit für die Wartbarkeit eines Systems & \cite{Lago2009AMana
 \end{tabularx} 
 \end{table}
 
-Entsprechend werden in der Literatur Motivationen erwähnt, die auf Grund der Veränderungen in \ref{tab:auswertung_probleme_ursachen_needs}.
-Diese Veränderungen können zu den Motivationen für die genannten Probleme aus Frage 1.2 geführt haben. 
+Aus der Extraktion von Motivationen für den Einsatz von Verfolgbarkeit ergaben sich ähnliche Gründe die einen Bezug zu den Veränderungen in Tabelle \ref{tab:auswertung_probleme_ursachen_needs} hatten. Tabelle \ref{tab:auswertung_probleme_ursachen_motivation} zeigt das Ergebnis der Extraktion. Da die Definitionen teils implizit oder natürlichsprachlich waren, wurden die Intentionen den Begrifflichkeiten und Definitionen nach dem Standardkwerk von Pohl \cite[Tab. 30-1]{Pohl2008RequirementsTechniken} zugeordnet.
 
-%\begin{table}[!ht]
-%\renewcommand{\arraystretch}{1.3}
-%\caption{Motivationen für Probleme}
-%\label{tab:auswertung_probleme_motivation}
-%\centering
-%\begin{tabularx}{\columnwidth}{@{}ms@{}}
-%\toprule
-%1. Änderungsmanagement, Wartbarkeit & \cite{Saputri2016EnsuringApproach,Bavota2014EnhancingInformation,Spanoudakis2004Rule-basedRelations, Javed2014ACode,Tsuchiya2015InteractiveLogs,Omoronyia2011ExploringTraceability, Lago2009AManagement, Mader2009EnablingRelations, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
-%2. Veränderungen in der Notwendigkeit, Späte Dokumentation, Fehlen adequater Tools & \cite{Mder2007CustomizingProcess, Leuser2010TacklingSpecifications, Merten2016DoData} \\
-%\bottomrule
-%\end{tabularx} 
-%\end{table}
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\caption{Motivationen für Probleme}
+\label{tab:auswertung_probleme_ursachen_motivation}
+\centering
+\begin{tabularx}{\columnwidth}{@{}ms@{}}
+\toprule
+Änderungsmanagement & \cite{Spanoudakis2004Rule-basedRelations, Javed2014ACode, Tsuchiya2013RecoveringProducts, Saputri2016EnsuringApproach, Omoronyia2011ExploringTraceability,Bavota2014EnhancingInformation, Mder2007CustomizingProcess, Mader2009EnablingRelationss, Mder2012TowardsMaintenance, Ghabi2015ExploitingCode} \\
+Nachweisbarkeit \& Akzeptanz & \cite{Spanoudakis2004Rule-basedRelations, Bavota2014EnhancingInformation, Leuser2010TacklingSpecifications} \\
+Qualitätssicherung, Wartung und Pflege & \cite{Spanoudakis2004Rule-basedRelations, Javed2014ACode, Tsuchiya2013RecoveringProducts, Saputri2016EnsuringApproach, Bavota2014EnhancingInformation, Mder2007CustomizingProcess, Mader2012TowardsMaintenance, Lago2009AManagement} \\
+\bottomrule
+\end{tabularx} 
+\end{table}
 
+Anhand der Erkenntnisse zu Veränderungen in Tabelle \ref{tab:auswertung_probleme_ursachen_needs}, Motivationen in Tabelle \ref{tab:auswertung_probleme_ursachen_motivation} sowie bekannten Ursachen aus Tabelle \ref{tab:auswertung_probleme_ursachen} konnte auf die bereits identifizierten Qualitätsprobleme ein Rückgeschlossen hergestellt werden. Weitere Qualitätsprobleme wurden nicht identifiziert.
 
 \subsection{Frage 1.3: Beeinflussen die gefundenen Probleme die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
 
+Alle identifizierten Probleme beeinflussen mindestens eine der Kriterien für Qualität von Verfolgbarkeit
 
-...
+% Vieleicht noch einfügen der Probleme / Erklärung einzeln?
 
 \subsection{Frage 2: Welche Verfahren existieren im Management der Requirements Traceability zur Behandlung von Qualitätsproblemen?}
-...
+
+In den 14 ausgewählten Literaturen wurden insgesamt 23 Verfahren extrahiert, die die identifizierten Qualitätsprobleme in Frage 1.1 addressieren. Es konnte aber festgestellt werden, das alle Verfahren auf einer Kategorie von Verfahren oder Techniken basierten, die bereits erfolgreich in der Domäne eingesetzt worden sind. Die Kategorien entstammen vorhergegangenen SLRs und Erwähnungen in anderen Literaturen \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations}. Insgesamt wurden 7 zentrale Kategorien von Verfahren bestimmt die Qualitätsprobleme im Management der Requirements Traceability behandeln.
 
 \subsection{Frage 2.1: Greift die Literatur Prozesse oder Methodiken auf, die zu einer Verbesserung der Qualität beitragen?}
 
-Verschiedenste Prozesse und Methodiken wurden in der Literatur genannt, mit dem das Management von Requirements Traceability und damit die Qualität verbessert werden kann. 
+Verschiedenste Verfahren und Techniken wurden in der Literatur genannt, mit dem der Aufwand und die Qualität des Mangements von Requirements Traceability verbessert werden kann:
 
 \begin{table}[htbp]
-%\renewcommand{\arraystretch}{1.3}
+\renewcommand{\arraystretch}{1.3}
 \centering
 \begin{threeparttable}
 \begin{tabularx}{\columnwidth}{@{}XXl@{}}
@@ -142,17 +146,18 @@ Verfahren & Fokus Traceability & Quelle  \\ \midrule
 \end{tabularx}
 \medskip
     IR : Information Retrieval
+    Design : Modellierung
 \end{threeparttable}
 \caption{Verfahren und Fokus}
 \label{tab:auswertung_verfahren_kategorisierung}
 \end{table}
 
-Anhand der 
-
-Sie alle fußten aber auf ein oder mehreren Grundverfahren oder Techniken die sich im Einsatzgebiet bereits bewährt haben. In vorrangegangen SLR zu Requirements Traceability Ansätzen \cite{Javed2014ACode, Mader2012TowardsMaintenance} wurden bereits schon verfügbare Ansätze kategorisiert. In der Analyse ließen sich ein Großteil der genannten Verfahren den Kategorisierungen zuordnen. Abweichend zu den in den SLRs genannten Kategorisierungen, konnten die in \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations} beschriebenen Ähnlichkeitsbasierten Verfahren nicht direkt zugeordnet werden. Tabelle \ref{tab:auswertung_verfahren_kategorisierung} zeigt alle Kategorisierungen und ihre Nennungen in den im Review gefundenen Quellen.
+Sie alle fußten aber auf ein oder mehreren Verfahren oder Techniken die sich im Einsatzgebiet bereits bewährt haben. In einem vorrangegangen SLR zu Requirements Traceability Ansätzen \cite{Javed2014ACode, Mader2012TowardsMaintenance} wurden bereits schon verfügbare Ansätze kategorisiert. In der Analyse ließen sich ein Großteil der genannten Verfahren den Kategorisierungen zuordnen. Abweichend zu den in den SLRs genannten Kategorisierungen, konnten die in \cite{Tsuchiya2015InteractiveLogs, Omoronyia2011ExploringTraceability, Leuser2010TacklingSpecifications, Spanoudakis2004Rule-basedRelations} beschriebenen Ähnlichkeitsbasierten Verfahren nicht direkt zugeordnet werden. Tabelle \ref{tab:auswertung_verfahren_kategorisierung} zeigt alle Kategorisierungen und ihre Nennungen in den im Review gefundenen Quellen.
 
 \begin{table}[htbp]
 \renewcommand{\arraystretch}{1.3}
+\caption{Zuordnung Kategorisierung der Verfahren und ihrer Nennungen}
+\label{tab:auswertung_verfahren_kategorisierung}
 \centering
 \begin{threeparttable}
 \begin{tabularx}{\columnwidth}{@{}Xl@{}}
@@ -173,29 +178,31 @@ Machine Learning basierte Traceability & \cite{Javed2014ACode} \\
       %\item[*] In \cite{Kollanus2010Test-DrivenApproach} werden die gleichen Studien wie in \cite{Kollanus2011CriticalDevelopment} untersucht.
       %\end{tablenotes}
 \end{threeparttable}
-\caption{Zuordnung Kategorisierung der Verfahren und ihrer Nennungen}
-\label{tab:auswertung_verfahren_kategorisierung}
 \end{table}
 
-
-Limtierungen?
-
-
+Für eine genaue Beschreibung der Verfahren und Techniken wird auf \cite{Javed2014ACode, Leuser2010TacklingSpecifications} verwiesen. 
 
 \subsection{Frage 2.2: Addressieren die gefundenen Verfahren die Kriterien in \ref{tab:qualitaet_verfolgbarkeit}?}
-...
+
+Alle identifizierten Probleme addressieren mindestens eine der Kriterien für Qualität von Verfolgbarkeit
 
 \subsection{Frage 3: Lassen sich die Erkenntnisse aus 1-2 zu Aussagen über mögliche Verfahrensweisen im spezifischen Anwendungsfall zusammenfassen?}
-..
 
-\section{Diskussion}
+Aus den Problemstellungen in Frage 1.1 lassen sich zwei spezifische Anwendungsfälle ableiten
 
-Grafik zu
+\begin{itemize}
+    \item Verhindern des Verfalls von Verfolgbarkeit durch Evolution
+    \item Verbesserung der Qualität von Verfolgbarkeit in bestehenden Spezifikationen
+\end{itemize}
 
-Das Hauptaugenmerk dieses SLR war es, bestehende Probleme in der Requirements Traceability zu identifizieren und zu klassifizieren. Um einen Fokus zu setzen, wurde sich bei den Forschungfragen am untergeordneten Ziel, der Verbesserung der Erkennung und Vermeidung von Qualitätsproblemen in der Requirements Traceability, orientiert. Unter betrachtung 
+\textit{1. Verhindern des Verfalls von Verfolgbarkeit durch Evolution}
 
-Das Hauptziel dieses Reviews war:
+Bezeichnet alle Maßnahmen die angewendet werden müssen, um die Qualität wiederherzustellen. Eine Wiederherstellung kann nach den Kategorien in Tabelle \ref{tab:auswertung_verfahren_kategorisierung} in zwei Verfahrensarten eingestuft werden. Die explizite Traceability benötigt im Vorfeld der Entwicklungen eine Spezifikation/Modell anhand derer sie Veränderungen im Softwaresystem bei ihrer Entstehung erkennt und propagiert. Die implizite Traceability wird erst zu einem späteren Zeitpunkt ausgeführt und rekonstruiert Beziehungen anhand der ihr gegebenen Informationen. Unter dem Fokus der Qualität ist abzuwägen welche Art von Verfahren verwendet wird.
 
-\begin{center}
-\enquote{Welche Arten von Problemen entstehen im Management der Requirements Traceability und wie können diese klassifiziert werden?}
-\end{center}
+Handelt es sich um ein neues Softwareprojekt ist die explizite Traceability vorzuziehen, da ihr initialer Aufwand zwar größer ist als der impliziter Verfahren, die Qualität der Verfolgbarkeit aber dauerhaft sichert. Explizite Verfahren sind die \enquote{Modellgetriebene Traceability}, \enquote{Regelbasierte Traceability}, \enquote{Evolutionsbasierte Traceability}.
+
+Handelt es sich um ein bestehendes Softwareprojekt ist eine explizite Traceability nicht unbedingt anwendbar. Da die Rekonstruktion von Informationen ein zeit- und kostenintensiver Prozess ist, ist der Einsatz solcher Tools ratsam. Je nach Projekt wurde bereits schon Verfolgbarkeit bis zu einem bestimmten Grad etabliert. Um die Qualität zu erhöhen werden die verfügbaren Informationen dazu verwendet, weitere Beziehungen herzustellen. Implizite Verfahren sind die \enquote{Ähnlichkeitsbasierte Traceability}, \enquote{Information Retrieval (IR) basierte Traceability}, \enquote{Linkbasierte Traceability}, \enquote{Machine Learning basierte Traceability}
+
+\textit{2. Verbesserung der Qualität von Verfolgbarkeit in bestehenden Spezifikationen}
+
+Entsprechend der Empfehlungen aus 1 ist ein implizites Verfahren zu verwenden, dass anhand verfügbarer Informationen und Beziehungen die Qualität bis zu einem gewissen Grad wiederherstellt.

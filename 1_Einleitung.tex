@@ -8,7 +8,7 @@ Nach ISO/IEC/IEEE 29148:2011 ist eine Anforderung laut Pohl und Rupp verfolgbar,
 \begin{quote}
 [..] wenn sowohl der Ursprung der Anforderung als auch deren Umsetzung und die Beziehung zu anderen Dokumenten nachvollziehbar ist. \cite[S.48]{Pohl2015BasiswissenIREB-Standard}
 \end{quote}
-Eine so gepflegte Beziehung wird auch als Verfolgbarkeitsinformation bezeichnet. Ihre zentrale Rolle für das Requirements Management wird dadurch bestimmt, dass die Nutzung von Verfolgbarkeit allgemeine Techniken und Aspekte der Systementwicklung umfassend fördert und Vorraussetzung dafür ist, bestimmte Techniken im Entwicklungsprozess einsetzen zu können. \cite{Pohl2008RequirementsTechniken} Daher hat 
+Eine so gepflegte Beziehung wird auch als Verfolgbarkeitsinformation bezeichnet. Ihre zentrale Rolle für das Requirements Management wird dadurch bestimmt, dass sie die Nutzung von Verfolgbarkeit allgemeine Techniken und Aspekte der Systementwicklung umfassend fördert und Vorraussetzung dafür ist, bestimmte Techniken im Entwicklungsprozess einsetzen zu können. \cite{Pohl2008RequirementsTechniken} Daher hat 
 \begin{quote}
 [d]ie Qualität der Nachvollziehbarkeit von Entwicklungsartefakten [..] einen großen Einfluss auf die Systementwicklung. \cite[S.507]{Pohl2008RequirementsTechniken}
 \end{quote}
@@ -26,9 +26,9 @@ Was bedeutet aber der Begriff \enquote{Qualität} in der Requirements Traceabili
 Wie in \ref{fig:pohlrupp_prepostrs} dargestellt wird zwischen drei Arten von Verfolgbarkeit unterschieden:
 
 \begin{itemize}
-    \item \textbf{Pre-RS:} Alle Beziehungen zu Artefakten die einer Anforderung vorgelagert sind z.B. Dokumente, Interviews etc. Im allgemeinen der Ursprung einer Anforderung
-    \item \textbf{Post-RS:} Alle Beziehungen die einer Anforderung nachgelagert sind z.B Implementierung, Tests. Im allgemeinen die Auswirkung einer Anforderung
-    \item \textbf{Verfolgbarkeit zwischen Anforderungen:} Abhängigkeiten oder Beziehungen zwischen Anforderungen. So kann z.B. eine Anforderung aus einem Konflikt zwischen zwei Anforderungen entstehen oder diese ersetzen. Im allgemeinen spricht man von einer Verfolgbarkeit über die Spezifikation. \cite{Pohl2015BasiswissenIREB-Standard}
+    \item \textbf{Pre-RS:} Alle Beziehungen zu Artefakten die einer Anforderung vorgelagert sind z.B. Dokumente, Interviews etc. Im Allgemeinen der Ursprung einer Anforderung
+    \item \textbf{Post-RS:} Alle Beziehungen die einer Anforderung nachgelagert sind z.B Implementierung, Tests. Im Allgemeinen die Auswirkung einer Anforderung
+    \item \textbf{Verfolgbarkeit zwischen Anforderungen:} Abhängigkeiten oder Beziehungen zwischen Anforderungen. So kann z.B. eine Anforderung aus einem Konflikt zwischen zwei Anforderungen entstehen oder diese ersetzen. Grundsätzlich spricht man von einer Verfolgbarkeit über die Spezifikation. \cite{Pohl2015BasiswissenIREB-Standard}
 \end{itemize}
 
 Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzierung ein, wie in \ref{fig:abb_requirementstechniken} dargestellt.
@@ -40,9 +40,9 @@ Auf dem Pre-RS \& Post-RS Modell aufbauend, führt Pohl eine weitere Differenzie
   \label{fig:abb_requirementstechniken}
 \end{figure}
 
-Die \enquote{Erweiterte Pre- und Post-Traceability} präzisiert die Sicht auf die vor- und nach-gelagerten Artefakte. Die Pre-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und Aspekten in einer der 4 Sichten des Systemkontext. Die Post-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und nachgelagerten Artefakten die im Entwicklungsprozess entstehen. Die Beziehung zwischen Anforderungen umfasst zusätzlich die Verfolgbarkeit zwischen Zielen, Szenarien und lösungsorientierten Anforderungen \cite{Pohl2008RequirementsTechniken}.
+Die \enquote{Erweiterte Pre- und Post-Traceability} präzisiert die Sicht auf die vor- und nach-gelagerten Artefakte. Die Pre-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und Aspekten in einer der 4 Sichten des Systemkontexts. Die Post-RS Traceability beschreibt alle Beziehungen zwischen Anforderungsartefakten und nachgelagerten Artefakten die im Entwicklungsprozess entstehen. Die Beziehung zwischen Anforderungen umfasst zusätzlich die Verfolgbarkeit zwischen Zielen, Szenarien und lösungsorientierten Anforderungen \cite{Pohl2008RequirementsTechniken}.
 
-Zusammenfassend lässt sich festhalten, das Requirements Traceability die Verfolgbarkeit einer Anforderung vom Ursprung bis zur Implementierung beschreibt. Diese Beziehung muss bidirektional sein, d.h. sie ist in vorwärts- wie in rückwärtsgerichteter Richtung möglich. Eine Verfolgbarkeit besteht dabei zwischen allen vor- und nach-gelagerten Artefakten im Entwicklungsprozess, wobei nach Pohl diese aus dem Kontext, Anforderungsartefakten und nachgelagerten Entwicklungsartefakten besteht. Die Qualität einer Verfolgbarkeit definiert sich damit durch die Merkmale der Qualität eines eines Anforderungsdokuments. Die Qualitätskritieren die in ISO/IEC/IEEE 29148:2011 für die Verfolgbarkeit greifen, sind demnach:
+Zusammenfassend lässt sich festhalten, dass Requirements Traceability die Verfolgbarkeit einer Anforderung vom Ursprung bis zur Implementierung beschreibt. Diese Beziehung muss bidirektional sein, d.h. sie ist in vorwärts- wie in rückwärtsgerichteter Richtung möglich. Eine Verfolgbarkeit besteht dabei zwischen allen vor- und nach-gelagerten Artefakten im Entwicklungsprozess, wobei nach Pohl diese aus dem Kontext, Anforderungsartefakten und nachgelagerten Entwicklungsartefakten besteht. Die Qualität einer Verfolgbarkeit definiert sich damit durch die Merkmale der Qualität eines eines Anforderungsdokuments. Die Qualitätskritieren die in ISO/IEC/IEEE 29148:2011 für die Verfolgbarkeit greifen, sind demnach:
 
 \begin{table}[ht]
 \renewcommand{\arraystretch}{1.3}
@@ -86,16 +86,11 @@ Um die Qualität sicherzustellen ist es daher wichtig zu wissen, welche Probleme
 
 \section{Vorgehen}
 Zu Beginn wurde ein Systematic Literature Review (SLR) nach Kitchenham durchgeführt, um Problemen im Management der Requirements Traceability und Methoden ihrer Vermeidung zu bestimmen.
-Ein SLR ist ein formalisierter, wiederholbarer Prozess nach dem ein Forscher die verfügbare Forschungsliteratur anhand definierten Forschungsfragen systematisch durchsucht, um den aktuellen Forschungsstand zu einer Thematik zu bestimmen \cite{Walia2009AErrors}. Die Kriterien für die Auswahl der Literatur und die Vorgehensweise werden dabei offen gelegt und detailliert erläutert, um die Nachvollziehbarkeit, Fairness und Gründlichkeit der Studie begründen zu können. Zudem gibt die Systematik dem Forscher die Sicherheit, die Thematik weitestgehend erfasst zu haben, damit er oder andere Forscher auf den Erkenntnissen weiter aufbauen können \cite{SystematischesArbeiten,Keele2007GuidelinesEngineering}.
+Ein SLR ist ein formalisierter, wiederholbarer Prozess nach dem ein Forscher die verfügbare Forschungsliteratur anhand von definierten Forschungsfragen systematisch durchsucht, um den aktuellen Forschungsstand zu einer Thematik zu bestimmen \cite{Walia2009AErrors}. Die Kriterien für die Auswahl der Literatur und die Vorgehensweise werden dabei offen gelegt und detailliert erläutert, um die Nachvollziehbarkeit, Fairness und Gründlichkeit der Studie begründen zu können. Zudem gibt die Systematik dem Forscher die Sicherheit, die Thematik weitestgehend erfasst zu haben, damit er oder andere Forscher auf den Erkenntnissen weiter aufbauen können \cite{SystematischesArbeiten,Keele2007GuidelinesEngineering}.
 
 Nach \cite{Walia2009AErrors} muss ein SLR einem zentralen Ziel folgen, um effektiv zu sein. Das zentrale Ziel dieser Studie, ist ausgehend von den abschließenden Fragestellungen in \ref{sec:Einleitung}:
 
 % Ggf. andere formulierung hier? Identifizieren? Vermeiden?
 \enquote{Das Ziel dieser Studie ist es, bestehende Qualitätsprobleme im Management der Requirements Traceability zu identifizieren, um diese zukünftig anhand bekannter Verfahren bestimmen und vermeiden zu können}
 
-
-Das weitere Vorgehen dieser Studie ist wie folgt gegliedert. In \ref{sec:Forschungsmethode} wird kurz der Ablauf des SLRs beschrieben und die einzelnen Schritte detailliert erläutert. In \label{sec:Ergebnisse} werden die Erkenntnisse des Reviewprozesses vorgestellt. ... \textbf{[ weiteres Vorgehen hier einzufügen ]}
-
-\section{Background}
-
-ggf. noch einfügen wenn Zeit, bzw. aus der Einleitung ausgliedern
+Das weitere Vorgehen dieser Studie ist wie folgt gegliedert. In \ref{sec:Forschungsmethode} wird der Aufbau des Reviewprotokolls und den dazugehörigen Forschungsfragen, Auswahlkriterien, ,Suchstrings , Vorgehen und Methoden zur Datenextraktion näher beschrieben. Außerdem enthält dieses Kapitel die Ergebnisse aus der Durchführung des Reviews. Anschließend erfolgt in \ref{sec:AuswertungReview} die Auswertung des Reviews, mit der Beantwortung aller Forschungsfragen ausgehend von den Ergebnissen der Datenextraktion und Analyse. Im letzten Kapitel \ref{sec:DiskussionFazit} werden nochmal die Ergebnisse zusammengefasst und auf die Frage des Reviews und das zentrale Ziel dieser Studie angewendet.
